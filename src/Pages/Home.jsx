@@ -1,12 +1,14 @@
 import React from 'react';
 import Header from '../Component/Header'
+import Projects from '../Component/Projects'
+import '../Style/Home.scss'
 
-export default function About()
+export default function Home()
 {
     return (
         <div>
             <Header/>
-            <h1></h1>
+            <Projects/>
         </div>
     )
 }
