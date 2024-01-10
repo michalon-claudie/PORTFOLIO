@@ -1,3 +1,75 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+.mainContainer
+{
+    position: relative;
+    background-color: blue;
+    animation: back 6s linear;
+    z-index: 5;
+}
+.loaderC
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#fff;
+    .loader-point {
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        animation: loader-animation 4s linear infinite;
+      }
+    .loader-line {
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform-origin: left;
+        animation: loader-animation 4s linear infinite;
+      }
+    @keyframes loader-animation {
+        0% {
+          transform: translateX(0);
+          width: 0;
+        }
+        25% {
+          transform: translateX(25%);
+          width: 25%;
+        }
+        50% {
+          transform: translateX(50%);
+          width: 50%;
+        }
+        75% {
+          transform: translateX(75%);
+          width: 75%;
+        }
+        100% {
+          transform: translateX(100%);
+          width: 100%;
+        }
+      }
+}
+
+@keyframes back{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.3;
+    }
+    75%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/***end-loader***/

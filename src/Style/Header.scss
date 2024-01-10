@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 30px;
     .Title{
         h1,h2{
@@ -27,10 +28,18 @@
             }
         }
     }
-    nav{
-        display: flex;
-        li{
+    .iconContainer{
+        display:flex;
+        width:34%;
+        .navList{
             display:flex;
+            flex-direction: row;
+            list-style-type: none;
+            gap: 10%;
+            width:100%;
+            li{
+                font-size:26px;
+            }
         }
     }
 }

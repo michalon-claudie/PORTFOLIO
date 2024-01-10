@@ -1,22 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../Style/Header.scss'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEllipsis } from '@fortawesome/free-solid-svg-icons';
 
 export default function Header (){
-    const [isNavVisible, setNavVisibility] = useState(false);
-
-    const handleIconOnClick =() =>{
-        setNavVisibility(true);
-    };
-
-    const handleIconHover = () => {
-        setNavVisibility(true);
-    };
-
-    const handleIconLeave = () => {
-        setNavVisibility(false);
-    };
+    
     return(
         <div className='titleAndNavBar'>
             <div className='Title'>
@@ -24,9 +10,7 @@ export default function Header (){
                 <h2>Développeuse FRONT-END React</h2>
                 <a href="mailto:michalon.claudie@outlook.fr">michalon.claudie@outlook.fr</a>
             </div>
-            <div className='iconContainer' onClick={handleIconOnClick} onMouseEnter={handleIconHover} onMouseLeave={handleIconLeave}>
-                <FontAwesomeIcon icon={faEllipsis} />
-                {isNavVisible && (
+            <div className='iconContainer'>
                 <nav className='navList'>
                     <li>
                         Acceuil
@@ -38,7 +22,6 @@ export default function Header (){
                         A propos
                     </li>
                 </nav>
-                )}
             </div>
         </div>
     )
