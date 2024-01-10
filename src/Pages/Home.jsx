@@ -16,8 +16,8 @@ export default function Home()
         <div>
             {loading ? (
             <div className="loaderC">
-                <div className="loader-point"></div>
-                <div className="loader-line"></div>
+                <div className="loader-line-horizontal"></div>
+                <div className="loader-line-vertical"></div>
             </div>
             ) : (
             <main className="mainContainer">

@@ -8,51 +8,52 @@ body{
     animation: back 6s linear;
     z-index: 5;
 }
+
 .loaderC
 {
+    display: flex;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color:#fff;
-    .loader-point {
-        width: 10px;
-        height: 10px;
-        background-color: #fff;
-        border-radius: 50%;
-        position: absolute;
-        animation: loader-animation 4s linear infinite;
-      }
-    .loader-line {
-        height: 2px;
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform-origin: left;
-        animation: loader-animation 4s linear infinite;
-      }
-    @keyframes loader-animation {
-        0% {
-          transform: translateX(0);
-          width: 0;
-        }
-        25% {
-          transform: translateX(25%);
-          width: 25%;
-        }
-        50% {
-          transform: translateX(50%);
-          width: 50%;
-        }
-        75% {
-          transform: translateX(75%);
-          width: 75%;
-        }
-        100% {
-          transform: translateX(100%);
-          width: 100%;
-        }
-      }
+    color: #fff;
+}
+
+.loader-line-horizontal,
+.loader-line-vertical 
+{
+    height: 2px;
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    left: 0;
+    transform: scale(0);
+    transition: transform 0.4s ease-in-out;
+    transform-origin: left;
+    animation: loader-animation 4s linear infinite;
+}
+
+.loader-line-vertical {
+  transform: rotate(90deg);
+}
+
+@keyframes loader-animation {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 100%;
+  }
+  50% {
+    width: 0;
+    transform: scale(0.5) ;
+  }
+  75% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
 }
 
 @keyframes back{
