@@ -7,8 +7,6 @@ export default function Header (){
         <div className='titleAndNavBar'>
             <div className='Title'>
                 <h1>MICHALON Claudie</h1>
-                <h2>Développeuse FRONT-END React</h2>
-                <a href="mailto:michalon.claudie@outlook.fr">michalon.claudie@outlook.fr</a>
             </div>
             <div className='iconContainer'>
                 <nav className='navList'>
