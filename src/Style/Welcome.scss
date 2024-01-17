@@ -1,0 +1,11 @@
+.welcomeContainer{
+    display:flex;
+    justify-content: end;
+    height:100vh;
+    width:100%;
+    img{
+        box-shadow: 1px 1px 1px 1px black;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+}
