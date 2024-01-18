@@ -5,9 +5,20 @@
     height:100vh;
     margin:20px 20px 0px 20px;
     img{
-        box-shadow: 1px 1px 1px 1px black;
+        box-shadow: 1px 1px 1px 1px white;
         border-radius: 20px;
         object-fit: cover;
         width:30%;
     }
+    .helloAndContactContainer{
+        a{
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        p{
+            font-size: 27px;
+            font-weight:bold;
+        }
+}
 }

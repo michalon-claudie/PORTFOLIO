@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import img from '../images/MICHALON.webp'
 import '../Style/Welcome.scss'
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Welcome(){
 const [message, setMessage] = useState('');
@@ -19,7 +24,19 @@ const intervalId = setInterval(() => {
 }, []);
     return(
         <section className='welcomeContainer'>
-            <p>{message}</p>
+            <div className='helloAndContactContainer'>
+                <p>{message}</p>
+                <a href="https://github.com/michalon-claudie">
+                    <FontAwesomeIcon icon={faGithub} />
+                </a>
+                <a href="https://www.linkedin.com/in/claudie-michalon-8b1a0422a/">
+                    <FontAwesomeIcon icon={faLinkedinIn} />
+                </a>
+                <a href ="MAILTO:michalon.claudie@outlook.fr">
+                    <FontAwesomeIcon icon={faEnvelope} />
+                </a>
+                <FontAwesomeIcon icon={faPhoneVolume} />
+            </div>
             <img src={img} alt="MICHALONDevReact"/>
         </section>
     )
