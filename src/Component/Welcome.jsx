@@ -26,16 +26,18 @@ const intervalId = setInterval(() => {
         <section className='welcomeContainer'>
             <div className='helloAndContactContainer'>
                 <p>{message}</p>
-                <a href="https://github.com/michalon-claudie">
-                    <FontAwesomeIcon icon={faGithub} />
-                </a>
-                <a href="https://www.linkedin.com/in/claudie-michalon-8b1a0422a/">
-                    <FontAwesomeIcon icon={faLinkedinIn} />
-                </a>
-                <a href ="MAILTO:michalon.claudie@outlook.fr">
-                    <FontAwesomeIcon icon={faEnvelope} />
-                </a>
-                <FontAwesomeIcon icon={faPhoneVolume} />
+                <div className='iconContact'>
+                    <a href="https://github.com/michalon-claudie">
+                        <FontAwesomeIcon icon={faGithub} />
+                    </a>
+                    <a href="https://www.linkedin.com/in/claudie-michalon-8b1a0422a/">
+                        <FontAwesomeIcon icon={faLinkedinIn} />
+                    </a>
+                    <a href ="MAILTO:michalon.claudie@outlook.fr">
+                        <FontAwesomeIcon icon={faEnvelope} />
+                    </a>
+                    <FontAwesomeIcon icon={faPhoneVolume} />
+                </div>
             </div>
             <img src={img} alt="MICHALONDevReact"/>
         </section>

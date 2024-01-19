@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Welcome from '../Component/Welcome'
-import Header from '../Component/Header'
+import Naviguation from '../Component/Naviguation'
 import Projects from '../Component/Projects'
 import '../Style/Home.scss'
 
@@ -24,7 +24,7 @@ export default function Home()
             ) : (
             <main className="mainContainer">
                 <Welcome/>
-                <Header />
+                <Naviguation/>
                 <Projects />
             </main>
             )}
