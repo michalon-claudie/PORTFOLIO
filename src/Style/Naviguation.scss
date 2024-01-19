@@ -1,4 +1,4 @@
-.titleAndNavBar{
+.NavBar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -6,37 +6,24 @@
     color: #121b2b;
     background: #C9D6FF;
     margin:20px 0px 20px 0px;
-    .Title{
-        h1{
-            font-family: 'Roboto', sans-serif;
-            display: flex;
-            margin-block-start: 0px;
-            margin-block-end: 0px;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            font-weight: 300;
-            font-size: 48px;
-        }
-    }
-    .iconContainer{
+    .navList{
         display:flex;
-        width:34%;
-        .navList{
-            display:flex;
-            flex-direction: row;
-            list-style-type: none;
-            gap: 10%;
-            width:100%;
-            a{
-                text-decoration: none;
-                font-size:23px;
-                padding:10px;
-                color:black;
-                &:hover{
-                    color:white;
-                    background-color: black;
+        flex-direction: row;
+        list-style-type: none;
+        gap: 10%;
+        width:100%;
+        a{
+            text-decoration: none;
+            font-size:23px;
+            padding:10px;
+            color:black;
+            &:active {
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
                 }
+            &:hover{
+                color:white;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             }
         }
     }
-}
+    }

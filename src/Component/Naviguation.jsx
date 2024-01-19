@@ -3,7 +3,6 @@ import '../Style/Naviguation.scss'
 
 export default function Naviguation (){
     const [activeSection, setActiveSection] = useState('Accueil');
-    const navRef = useRef(null);
     
     useEffect(() => {
         const handleScroll = () => {
@@ -11,20 +10,46 @@ export default function Naviguation (){
         const Projets = document.getElementById('Projets');
         const A_propos = document.getElementById('A_propos');
         const scrollPosition = window.scrollY;
-        const navOffsetTop = navRef.current.offsetTop;
-        }})
+
+        if (
+            scrollPosition >= Accueil.offsetTop &&
+            scrollPosition < Projets.offsetTop
+          ) {
+            setActiveSection('Accueil');
+          } else if (
+            scrollPosition >= Projets.offsetTop &&
+            scrollPosition < A_propos.offsetTop
+          ) {
+            setActiveSection('Projets');
+          } else if (
+            scrollPosition >= Projets.offsetTop &&
+            scrollPosition < A_propos.offsetTop
+          ) {
+            setActiveSection('A_propos');
+          } else{
+            setActiveSection('Contact')
+          }
+
+        };
+        const handleScrollWithLoad = () => {
+            handleScroll();
+            window.addEventListener('scroll', handleScroll);
+          };
+
+        window.addEventListener('load', handleScrollWithLoad);
+    
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, [])
     return(
-        <div className='titleAndNavBar'>
-            <div className='Title'>
-                <h1>MICHALON Claudie</h1>
-            </div>
-            <div className='iconContainer'>
-                <nav className='navList'>
-                <a href="#Accueil" className={activeSection === 'Accueil' ? 'active' : ''}>Accueil</a>
-                <a href="#Projets" className={activeSection === 'Projets' ? 'active' : ''}>Projets</a>
-                <a href="#A_propos" className={activeSection === 'A_propos' ? 'active' : ''}>A propos</a>
-                </nav>
-            </div>
+        <div className='NavBar'>
+            <nav className='navList'>
+            <a href="#Accueil" className={activeSection === 'Accueil' ? 'active' : ''}>Accueil</a>
+            <a href="#Projets" className={activeSection === 'Projets' ? 'active' : ''}>Projets</a>
+            <a href="#A_propos" className={activeSection === 'A_propos' ? 'active' : ''}>A propos</a>
+            <a href="#Contact" className={activeSection === 'A_propos' ? 'active' : ''}>Contact</a>
+            </nav>
         </div>
     )
 }
