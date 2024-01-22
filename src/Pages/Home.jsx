@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import Welcome from '../Component/Welcome'
 import Naviguation from '../Component/Naviguation'
+import About from '../Component/About'
 import Projects from '../Component/Projects'
+import Wheel from '../Component/Wheel'
 import '../Style/Home.scss'
 
 
@@ -25,7 +27,9 @@ export default function Home()
             <main className="mainContainer">
                 <Welcome/>
                 <Naviguation/>
-                <Projects />
+                <About/>
+                <Wheel/>
+                <Projects/>
             </main>
             )}
         </div>

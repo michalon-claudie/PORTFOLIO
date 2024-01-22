@@ -1,7 +1,6 @@
 .NavBar{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     color: #121b2b;
     background: #C9D6FF;
@@ -9,21 +8,28 @@
     .navList{
         display:flex;
         flex-direction: row;
+        justify-content: center;
         list-style-type: none;
-        gap: 10%;
+        gap: 4%;
         width:100%;
         a{
             text-decoration: none;
-            font-size:23px;
+            font-size:20px;
             padding:10px;
             color:black;
             &:active {
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                background: linear-gradient(to right, black,#C9D6FF);
                 }
             &:hover{
-                color:white;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                background: linear-gradient(to right, #f3f2f2,#C9D6FF);
             }
         }
     }
+    &.fixed-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        margin:0px;
+      }
     }
