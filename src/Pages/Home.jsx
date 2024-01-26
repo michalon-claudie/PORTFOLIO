@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import Welcome from '../Component/Welcome'
 import Naviguation from '../Component/Naviguation'
 import About from '../Component/About'
+import Dice from '../Component/Dice'
 import Projects from '../Component/Projects'
-import Wheel from '../Component/Wheel'
 import '../Style/Home.scss'
 
 
@@ -28,7 +28,7 @@ export default function Home()
                 <Welcome/>
                 <Naviguation/>
                 <About/>
-                <Wheel/>
+                <Dice/>
                 <Projects/>
             </main>
             )}
