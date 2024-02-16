@@ -5,27 +5,25 @@
       "date": "Juin 2023",
       "languages": ["HTML, CSS"],
       "description": "L’entreprise souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.J'étais chargée d'intégrer l'interface du site avec du code HTML et CSS. Pour cela, je travaille en étroite collaboration avec Sarah, la CTO, et Loïc, l’UI designer. ",
-      "img": "./images/booki.png",
+      "img": "./img/booki.png",
       "link": ""
     },
     {
         "id": "1",
-        "title": "Sophie Bluel Photo",
+        "title": "Oh My Food",
         "date": "Juillet 2023",
-        "languages": ["Javascript"],
-        "infos":
-          "En tant que développeur front-end pour l’agence ArchiWebos, je devais venir en renfort au sein d’une équipe qui travaille sur la conception d’un site portfolio pour une architecte d’intérieur Sophie Bluel.",
-        "img": "../assets/img/SophieBluel.png",
+        "languages": ["JHTML, CSS, Sass"],
+        "description": "",
+        "img": "./img/ohmyfood.png",
         "link": ""
       },
     {
       "id": "2",
-      "title": "MenuMaker",
+      "title": "Print-it",
       "date": "Aout 2023",
-      "languages": ["Méthode Agile"],
-      "infos":
-        "Qwenta, entreprise d’impression de supports pour les professionnels cherche à réaliser un outil en ligne permettant à ses clients restaurateurs: Créer, personnaliser, diffuser et imprimer un menu.",
-      "img": "../assets/img/MenuMaker.png"
+      "languages": ["JavaScript"],
+      "description": "",
+      "img": "./img/printIt.png"
       
     },
     {

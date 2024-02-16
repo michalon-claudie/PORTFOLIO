@@ -4,16 +4,20 @@ import '../Style/About.scss'
 export default function About(){
     return(
         <section className='AboutSection'>
-            <p>Enchanté et Bienvenue sur mon portfolio !
-                Je suis une ancienne infirmière qui a fait le grand saut vers le monde de la technologie, 
-                et je suis ravie de vous accueillir ici pour partager mon parcours et mes projets.
-                Après plusieurs années dans le domaine de la santé, j'ai ressenti le désir ardent de me plonger dans le développement web, en particulier dans le domaine du Frontend.
+            <h3>Enchanté et Bienvenue sur mon portfolio !</h3>
+            <p className='AboutSectionP'>
+                <br/>
+                Après plusieurs années dans le domaine de la santé, j'ai ressenti le besoin de changer. 
+                <br/>
+                Suite à de multiples recherches et beaucoup d'apprentissage en autodidacte, 
+                j'ai décidé de m'orienter dans le développement web, en particulier dans le domaine du Frontend.
+                <br/>
                 J'ai suivi une formation intensive sur la plateforme OpenClassrooms, où j'ai acquis de 
-                nombreuses compétences mais aussi fait de superbes rencontres.
+                nombreuses compétences mais aussi fait de superbes rencontres.<br/>
                 Je suis animée par la volonté de créer des expériences numériques convaincantes et accessibles,
                 tout en veillant à ce qu'elles respectent les normes éthiques et environnementales. 
                 Mon parcours atypique m'a apporté une perspective unique, alliant sensibilité humaine et expertise technique,
-                que je mets au service de chaque projet que j'entreprends.
+                que je mets au service de chaque projet que j'entreprends.<br/>
             </p>
         </section>
     )
