@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import Welcome from '../Component/Welcome'
 import Naviguation from '../Component/Naviguation'
 import About from '../Component/About'
-import Dice from '../Component/Dice'
 import Projects from '../Component/Projects'
+import Footer from '../Component/Footer'
 import '../Style/Home.scss'
 
 
@@ -28,8 +28,8 @@ export default function Home()
                 <Welcome/>
                 <Naviguation/>
                 <About/>
-                <Dice/>
                 <Projects/>
+                <Footer/>
             </main>
             )}
         </div>

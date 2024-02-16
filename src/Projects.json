@@ -1,0 +1,61 @@
+[   
+    {
+      "id": "0",
+      "title": "Booki",
+      "date": "Juin 2023",
+      "languages": ["HTML, CSS"],
+      "description": "L’entreprise souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.J'étais chargée d'intégrer l'interface du site avec du code HTML et CSS. Pour cela, je travaille en étroite collaboration avec Sarah, la CTO, et Loïc, l’UI designer. ",
+      "img": "./images/booki.png",
+      "link": ""
+    },
+    {
+        "id": "0",
+        "title": "Sophie Bluel Photo",
+        "date": "Juillet 2023",
+        "languages": ["Javascript"],
+        "infos":
+          "En tant que développeur front-end pour l’agence ArchiWebos, je devais venir en renfort au sein d’une équipe qui travaille sur la conception d’un site portfolio pour une architecte d’intérieur Sophie Bluel.",
+        "img": "../assets/img/SophieBluel.png",
+        "link": ""
+      },
+    {
+      "id": "1",
+      "title": "MenuMaker",
+      "date": "Aout 2023",
+      "languages": ["Méthode Agile"],
+      "infos":
+        "Qwenta, entreprise d’impression de supports pour les professionnels cherche à réaliser un outil en ligne permettant à ses clients restaurateurs: Créer, personnaliser, diffuser et imprimer un menu.",
+      "img": "../assets/img/MenuMaker.png"
+      
+    },
+    {
+      "id": "2",
+      "title": "Kasa",
+      "date": "Septembre 2023",
+      "languages": ["React"],
+      "infos":
+        "Kasa est une entreprise spécialisée dans la location d’appartements entre particuliers depuis près de 10 ans. Ce projet avait pour mission de développer une aplication web React.",
+      "img": "../assets/img/kasa.png",
+      "link": ""
+    },
+    {
+      "id": "3",
+      "title": "Nina Carducci",
+      "date": "Octobre 2023",
+      "languages": ["Seo", "Accessibilité"],
+      "infos":
+        "Ce projet avait pour objectif de proposer à Nina Carducci photographe, un service d’optimisation SEO.",
+      "img": "../assets/img/NinaCarducci.png",
+      "link": ""
+    },
+    {
+      "id": "4",
+      "title": "77events",
+      "date": "Octobre 2023",
+      "languages": ["React", "Yarn"],
+      "infos":
+        "Publication d'une nouvelle version du site 77events et correction des différents beugs.",
+      "img": "../assets/img/77events.png",
+      "link": ""
+    }
+  ]
