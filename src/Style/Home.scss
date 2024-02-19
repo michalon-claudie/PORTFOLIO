@@ -17,44 +17,70 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
+}
+.loader-line-horizontal,
+.loader-line-vertical,
+.loader-line-C {
+    position: absolute;
+    background-color: white; /* ou toute autre couleur désirée */
 }
 
 .loader-line-horizontal,
-.loader-line-vertical 
-{
+.loader-line-vertical {
+    width: 20px; /* ou toute autre dimension désirée */
     height: 2px;
-    position: absolute;
-    background-color: #fff;
-    top: 50%;
-    left: 0;
-    transform: scale(0);
-    transition: transform 0.4s ease-in-out;
-    transform-origin: left;
-    animation: loader-animation 4s linear infinite;
 }
 
 .loader-line-vertical {
-  transform: rotate(90deg);
+    width: 2px;
+    height: 20px; /* ou toute autre dimension désirée */
 }
 
-@keyframes loader-animation {
-  0% {
+.loader-line-C {
     width: 0;
-  }
-  25% {
-    width: 100%;
-  }
-  50% {
-    width: 0;
-    transform: scale(0.5) ;
-  }
-  75% {
-    width: 100%;
-  }
-  100% {
-    width: 0;
-  }
+    height: 0;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    animation: drawC 2s ease-in-out forwards;
+}
+
+@keyframes drawC {
+    0% {
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 20px solid transparent;
+    }
+    25% {
+        border-top: 20px solid black;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 20px solid transparent;
+    }
+    50% {
+        border-top: 20px solid transparent;
+        border-right: 20px solid black;
+        border-bottom: 20px solid transparent;
+        border-left: 20px solid transparent;
+    }
+    75% {
+        border-top: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid black;
+        border-left: 20px solid transparent;
+    }
+    100% {
+        border-top: 20px solid black;
+        border-right: 0px;
+        border-bottom: 20px solid black;
+        border-left: 20px solid black;
+        width: 40px;
+        height: 40px;
+    }
 }
 
 @keyframes back{

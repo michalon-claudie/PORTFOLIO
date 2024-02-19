@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export default function Welcome(){
 const [message, setMessage] = useState('');
 const originalMessage = "< Bienvenue, je suis Claudie Michalon, développeuse frontend />";
+const [showPhoneNumber, setShowPhoneNumber] = useState(false);
 
 useEffect(() => {
 let index = 0;
@@ -20,10 +21,14 @@ const intervalId = setInterval(() => {
     if (index > originalMessage.length) {
     clearInterval(intervalId);
     }
-}, 100);
+}, 150);
 }, []);
+
+const handlePhoneIconClick = () => {
+    setShowPhoneNumber(!showPhoneNumber);
+};
     return(
-        <section className='welcomeContainer'>
+        <section id="Accueil"className='welcomeContainer'>
             <div className='helloAndContactContainer'>
                 <p>{message}</p>
                 <div className='iconContact'>
@@ -36,8 +41,9 @@ const intervalId = setInterval(() => {
                     <a href ="MAILTO:michalon.claudie@outlook.fr">
                         <FontAwesomeIcon icon={faEnvelope} />
                     </a>
-                    <FontAwesomeIcon icon={faPhoneVolume} />
+                    <FontAwesomeIcon icon={faPhoneVolume} onClick={handlePhoneIconClick} className={showPhoneNumber ? 'active' : ''}/>
                 </div>
+                {showPhoneNumber && <p className="phoneNumber">+33621646708</p>}
             </div>
             <img src={img} alt="MICHALONDevReact"/>
         </section>

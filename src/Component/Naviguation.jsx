@@ -22,13 +22,13 @@ export default function Naviguation (){
               scrollPosition >= projetsRef.current.offsetTop &&
               scrollPosition < aproposRef.current.offsetTop
             ) {
-              setActiveSection('Projets');
+              setActiveSection('A_propos');
               navBarRef.current.classList.remove('fixed-nav');
             } else if (
               scrollPosition >= aproposRef.current.offsetTop &&
               scrollPosition < contactRef.current.offsetTop
             ) {
-              setActiveSection('A_propos');
+              setActiveSection('Project');
               navBarRef.current.classList.remove('fixed-nav');
             } else if (
               scrollPosition >= contactRef.current.offsetTop
@@ -63,8 +63,8 @@ export default function Naviguation (){
             <div className={`NavBar ${activeSection === 'Accueil' ? 'active' : ''}`} ref={navBarRef}>
             <nav className='navList'>
                 <a href="#Accueil" ref={accueilRef} className={activeSection === 'Accueil' ? 'active' : ''}>Accueil</a>
-                <a href="#Projets" ref={projetsRef} className={activeSection === 'Projets' ? 'active' : ''}>Projets</a>
                 <a href="#A_propos" ref={aproposRef} className={activeSection === 'A_propos' ? 'active' : ''}>A propos</a>
+                <a href="#Projets" ref={projetsRef} className={activeSection === 'Projets' ? 'active' : ''}>Projets</a>
                 <a href="#Contact" ref={contactRef} className={activeSection === 'Contact' ? 'active' : ''}>Contact</a>
             </nav>
             </div>

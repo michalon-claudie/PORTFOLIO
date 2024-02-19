@@ -14,7 +14,7 @@ export default function Projects() {
     };
 
     return (
-        <section className='Projects'>
+        <section id="Projets"className='Projects'>
             <h2>Mes projets</h2>
             <div className='projectsContainer'>
                 {projectsData.map(project => (

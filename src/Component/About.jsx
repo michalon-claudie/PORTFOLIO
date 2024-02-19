@@ -3,7 +3,7 @@ import '../Style/About.scss'
 
 export default function About(){
     return(
-        <section className='AboutSection'>
+        <section id="A_propos"className='AboutSection'>
             <h3>Enchanté et Bienvenue sur mon portfolio !</h3>
             <p className='AboutSectionP'>
                 <br/>
