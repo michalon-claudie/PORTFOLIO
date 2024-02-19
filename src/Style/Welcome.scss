@@ -26,3 +26,55 @@
         }
 }
 }
+
+.starsVisible .welcomeContainer .helloAndContactContainer {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.starsVisible .stars {
+    animation: starsFall 5s linear;
+}
+
+@keyframes starsFall {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.hideContent .helloAndContactContainer {
+    display: none;
+}
+
+.stars {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.star {
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.star:nth-child(1) {
+    top: -20px;
+    left: 20%;
+}
+
+.star:nth-child(2) {
+    top: -20px;
+    left: 50%;
+}
+
+.star:nth-child(3) {
+    top: -20px;
+    left: 80%;
+}

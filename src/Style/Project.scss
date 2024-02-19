@@ -9,10 +9,15 @@
     flex-wrap: wrap;
     padding: 20px 30px;
     .project{
-        width:24%;
+        width:23%;
         display: flex;
         padding: 25px 25px;
-        height:260px;
+        height:252px;
+        transition: all 0.3s ease;
+        &:hover {
+            transform: scale(1.1); 
+            filter: brightness(130%); 
+        }
         img{
             object-fit: cover;
             width: 100%;

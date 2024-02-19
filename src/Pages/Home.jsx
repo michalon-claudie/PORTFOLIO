@@ -12,7 +12,7 @@ import '../Style/Home.scss'
 export default function Home()
 {
     const [loading, setLoading] = useState(true);
-    const loaderDisplayTime = 3000;
+    const loaderDisplayTime = 5000;
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -29,6 +29,9 @@ export default function Home()
                 <div className="loader-line-horizontal"></div>
                 <div className="loader-line-vertical"></div>
                 <div className="loader-line-C"></div>
+                <div className="star star1"></div>
+                <div className="star star2"></div>
+                <div className="star star3"></div>
             </div>
             ) : (
             <main className="mainContainer">
