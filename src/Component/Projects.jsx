@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import Modal from '../Component/Modal'
 import projectsData from '../Projects.json'
 import '../Style/Project.scss'
 
@@ -23,22 +24,7 @@ export default function Projects() {
                     </div>
                 ))}
             </div>
-
-            {selectedProject && (
-                <div className="modal-overlay" onClick={closeModal}>
-                    <div className="modal">
-                        <div className="modal-content">
-                            <span className="close" onClick={closeModal}>&times;</span>
-                            <img src={selectedProject.img} alt={selectedProject.title} />
-                            <h3>{selectedProject.title}</h3>
-                            <p>Date: {selectedProject.date}</p>
-                            <p>Languages: {selectedProject.languages.join(', ')}</p>
-                            <p>{selectedProject.infos || selectedProject.description}</p>
-                            {selectedProject.link && <a href={selectedProject.link}>Voir le projet</a>}
-                        </div>
-                    </div>
-                </div>
-            )}
+            {selectedProject && <Modal project={selectedProject} closeModal={closeModal} />}
         </section>
     );
 }
