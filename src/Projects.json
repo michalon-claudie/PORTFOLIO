@@ -12,7 +12,7 @@
         "id": "1",
         "title": "Oh My Food",
         "date": "Juillet 2023",
-        "languages": ["JHTML, CSS, Sass"],
+        "languages": ["HTML, CSS, Sass"],
         "description": "",
         "img": "./img/ohmyfood.png",
         "link": ""
@@ -28,32 +28,56 @@
     },
     {
       "id": "3",
-      "title": "Kasa",
+      "title": "Sophie Bluel",
       "date": "Septembre 2023",
-      "languages": ["React"],
-      "infos":
-        "Kasa est une entreprise spécialisée dans la location d’appartements entre particuliers depuis près de 10 ans. Ce projet avait pour mission de développer une aplication web React.",
-      "img": "../assets/img/kasa.png",
+      "languages": ["JavaScript"],
+      "description": "",
+      "img": "./img/sophieBluel.png",
       "link": ""
     },
     {
       "id": "4",
-      "title": "Nina Carducci",
+      "title": "Menu Maker by Qwenta",
       "date": "Octobre 2023",
-      "languages": ["Seo", "Accessibilité"],
-      "infos":
-        "Ce projet avait pour objectif de proposer à Nina Carducci photographe, un service d’optimisation SEO.",
-      "img": "../assets/img/NinaCarducci.png",
+      "languages": ["Outils de veille, gestion de projet, choix des technos"],
+      "description": "",
+      "img": "./img/Qwenta.png",
       "link": ""
     },
     {
       "id": "5",
-      "title": "77events",
+      "title": "Kasa",
       "date": "Octobre 2023",
       "languages": ["React", "Yarn"],
-      "infos":
-        "Publication d'une nouvelle version du site 77events et correction des différents beugs.",
-      "img": "../assets/img/77events.png",
+      "description": "",
+      "img": "./img/kasa.png",
+      "link": ""
+    },
+    {
+      "id": "6",
+      "title": "Nina Carducci",
+      "date": "Novembre 2023",
+      "languages": ["SEO", "Performance","Lighthouse/Wave"],
+      "description": "",
+      "img": "./img/carducci.png",
+      "link": ""
+    },
+    {
+      "id": "7",
+      "title": "77Events",
+      "date": "Janvier 2024",
+      "languages": ["Tests unitaires", "Yarn Test","React"],
+      "description": "",
+      "img": "./img/77Events.png",
+      "link": ""
+    },
+    {
+      "id": "8",
+      "title": "Argent Bank",
+      "date": "Février 2024",
+      "languages": ["React", "Redux"],
+      "description": "",
+      "img": "./img/argentBank.png",
       "link": ""
     }
   ]
