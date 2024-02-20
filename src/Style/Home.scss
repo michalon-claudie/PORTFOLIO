@@ -1,5 +1,5 @@
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: "Kode Mono", monospace;
 }
 .mainContainer
 {
@@ -10,6 +10,18 @@ body{
     flex-direction: column;
 }
 
+h1{
+    font-size:27px;
+}
+.svg-inline--fa {
+    height: 1.7em;
+    transition: transform 0.2s ease; 
+}
+
+.svg-inline--fa:hover,
+.svg-inline--fa:active { 
+    transform: translateY(-2px); 
+}
 .loaderC {
     position: fixed;
     top: 0;

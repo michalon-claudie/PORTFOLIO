@@ -1,5 +1,15 @@
-a{
+.ContactMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: white 3px;
+    padding:70px 0px;
+    .iconContact{
+        display: flex;
+        gap: 20px;    
+    }
+    a{
     color: white;
     cursor: pointer;
     text-decoration: none;
-}
+}}

@@ -1,0 +1,25 @@
+.resume {
+    .skills {
+        margin-top: 20px;
+
+        .skill {
+            margin-bottom: 10px;
+
+            .skill-name {
+                font-weight: bold;
+            }
+
+            .progress-bar {
+                background-color: #eee;
+                height: 10px;
+                border-radius: 5px;
+
+                .progress {
+                    height: 100%;
+                    background-color: #007bff; // Couleur de la barre de progression
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

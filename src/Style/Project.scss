@@ -39,7 +39,7 @@
     justify-content: center;
     align-items: center;
     .modal {
-        background-color: #fff;
+        background-color: #0d1c56;
         padding: 20px;
         border-radius: 8px;
         max-width: 60%;
@@ -47,8 +47,11 @@
         overflow: auto;
         position: relative;
         .modal-content{
-            color:black;
-            border: 4px black;
+            color:white;
+            img{
+                width: 74%;
+                border-radius: 25px;
+            }
         }
         .close {
             position: absolute;

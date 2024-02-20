@@ -20,7 +20,7 @@ export default function Projects() {
             <div className='projectsContainer'>
                 {projectsData.map(project => (
                     <div key={project.id} className='project'>
-                        <img src={project.img} alt={project.title} onClick={() => openModal(project)} />
+                        <img src={project.cover} alt={project.title} onClick={() => openModal(project)} />
                     </div>
                 ))}
             </div>

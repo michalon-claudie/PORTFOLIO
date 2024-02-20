@@ -7,6 +7,7 @@ export default function Naviguation (){
     const projetsRef = useRef(null);
     const aproposRef = useRef(null);
     const contactRef = useRef(null);
+    const resumeRef = useRef(null);
     const navBarRef = useRef(null);
     
     useEffect(() => {
@@ -33,6 +34,11 @@ export default function Naviguation (){
             } else if (
               scrollPosition >= contactRef.current.offsetTop
             ) {
+              setActiveSection('Resume');
+              navBarRef.current.classList.remove('fixed-nav');
+              } else if (
+                scrollPosition >= contactRef.current.offsetTop
+              ){
                 setActiveSection('Contact');
                 navBarRef.current.classList.remove('fixed-nav');
               } else {
@@ -65,6 +71,7 @@ export default function Naviguation (){
                 <a href="#Accueil" ref={accueilRef} className={activeSection === 'Accueil' ? 'active' : ''}>Accueil</a>
                 <a href="#A_propos" ref={aproposRef} className={activeSection === 'A_propos' ? 'active' : ''}>A propos</a>
                 <a href="#Projets" ref={projetsRef} className={activeSection === 'Projets' ? 'active' : ''}>Projets</a>
+                <a href="#Resume" ref={resumeRef} className={activeSection === 'Resume' ? 'active' : ''}>Resume CV </a>
                 <a href="#Contact" ref={contactRef} className={activeSection === 'Contact' ? 'active' : ''}>Contact</a>
             </nav>
             </div>

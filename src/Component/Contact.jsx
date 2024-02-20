@@ -12,7 +12,7 @@ export default function (){
 
     return(
         <section className='ContactMe'>
-            <h2>Un projet en tete ? Parlons-en !</h2>
+            <h1>Un projet en tête ? Parlons-en !</h1>
             <div className='iconContact'>
                 <a href ="MAILTO:michalon.claudie@outlook.fr">
                     <FontAwesomeIcon icon={faEnvelope} />
