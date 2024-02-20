@@ -11,8 +11,6 @@ export default function Welcome(){
 const [message, setMessage] = useState('');
 const originalMessage = "< Bienvenue, je suis Claudie Michalon, développeuse frontend />";
 const [showPhoneNumber, setShowPhoneNumber] = useState(false);
-const [showImage, setShowImage] = useState(true);
-const [showMessage, setShowMessage] = useState(true);
 
 useEffect(() => {
     let index = 0;
@@ -26,20 +24,6 @@ useEffect(() => {
     }, 150);
 }, []);
 
-useEffect(() => {
-    const imageTimeout = setTimeout(() => {
-        setShowImage(false);
-    }, 6000); // Image disparaît après 6 secondes si l'utilisateur n'a pas scrollé
-
-    const messageTimeout = setTimeout(() => {
-        setShowMessage(false);
-    }, 6000); // Message disparaît après 6 secondes si l'utilisateur n'a pas scrollé
-
-    return () => {
-        clearTimeout(imageTimeout);
-        clearTimeout(messageTimeout);
-    };
-}, []);
 
 const handlePhoneIconClick = () => {
     setShowPhoneNumber(!showPhoneNumber);
@@ -62,13 +46,10 @@ return (
             </div>
             {showPhoneNumber && <p className="phoneNumber">+33621646708</p>}
         </div>
-        {showImage ? (
                 <img src={img} alt="MICHALONDevReact" className="imgTransition" />
-            ) : (
                 <div className="arrowDown">
                     <FontAwesomeIcon icon={faArrowDown} />
                 </div>
-            )}
     </section>
 );
 }

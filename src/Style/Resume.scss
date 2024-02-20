@@ -1,25 +1,44 @@
 .resume {
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    .resumePart{
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+        width: 40%;
+        button{
+        appearance: none;
+        font-family: "Kode Mono", monospace;
+        font-weight: 500;
+        color: white;
+        cursor: pointer;
+        box-sizing: border-box;
+        background-color: #0d1c56;
+        border-color: white;
+        padding-block:15px;
+        width: 50%;
+        }
+    }
     .skills {
-        margin-top: 20px;
-
-        .skill {
-            margin-bottom: 10px;
-
-            .skill-name {
-                font-weight: bold;
-            }
-
-            .progress-bar {
-                background-color: #eee;
-                height: 10px;
-                border-radius: 5px;
-
-                .progress {
-                    height: 100%;
-                    background-color: #007bff; // Couleur de la barre de progression
-                    border-radius: 5px;
-                }
+    margin-top: 20px;
+    width: 40%;
+    .skill {
+    margin-bottom: 10px;
+    width:35%;
+        .skill-name {
+        font-weight: bold;
+        }
+        .progress-bar {
+        background-color: #eee;
+        height: 10px;
+        border-radius: 5px;
+            .progress {
+            height: 100%;
+            background-color: #007bff; 
+            border-radius: 5px;
             }
         }
+    }
     }
 }
