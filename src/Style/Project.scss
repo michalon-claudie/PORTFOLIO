@@ -42,12 +42,13 @@
         background-color: #fff;
         padding: 20px;
         border-radius: 8px;
-        max-width: 80%;
+        max-width: 60%;
         max-height: 80%;
         overflow: auto;
         position: relative;
         .modal-content{
             color:black;
+            border: 4px black;
         }
         .close {
             position: absolute;

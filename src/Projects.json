@@ -5,6 +5,10 @@
       "date": "Juin 2023",
       "languages": ["HTML, CSS"],
       "description": "L’entreprise souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.J'étais chargée d'intégrer l'interface du site avec du code HTML et CSS. Pour cela, je travaille en étroite collaboration avec Sarah, la CTO, et Loïc, l’UI designer. ",
+      "images": [
+        "./img/booki.png",
+        "./img/ohmyfood.png",
+        "./img/booki.png"],
       "img": "./img/booki.png",
       "link": ""
     },
@@ -14,6 +18,7 @@
         "date": "Juillet 2023",
         "languages": ["HTML, CSS, Sass"],
         "description": "",
+        "images": "./img/ohmyfood.png",
         "img": "./img/ohmyfood.png",
         "link": ""
       },
@@ -23,8 +28,8 @@
       "date": "Aout 2023",
       "languages": ["JavaScript"],
       "description": "",
+      "images": "./img/printIt.png",
       "img": "./img/printIt.png"
-      
     },
     {
       "id": "3",
@@ -32,6 +37,7 @@
       "date": "Septembre 2023",
       "languages": ["JavaScript"],
       "description": "",
+      "images": "./img/sophieBluel.png",
       "img": "./img/sophieBluel.png",
       "link": ""
     },
@@ -41,6 +47,7 @@
       "date": "Octobre 2023",
       "languages": ["Outils de veille, gestion de projet, choix des technos"],
       "description": "",
+      "images": "./img/Qwenta.png",
       "img": "./img/Qwenta.png",
       "link": ""
     },
@@ -50,6 +57,7 @@
       "date": "Octobre 2023",
       "languages": ["React", "Yarn"],
       "description": "",
+      "images": "./img/kasa.png",
       "img": "./img/kasa.png",
       "link": ""
     },
@@ -59,6 +67,7 @@
       "date": "Novembre 2023",
       "languages": ["SEO", "Performance","Lighthouse/Wave"],
       "description": "",
+      "images": "./img/carducci.png",
       "img": "./img/carducci.png",
       "link": ""
     },
@@ -68,6 +77,7 @@
       "date": "Janvier 2024",
       "languages": ["Tests unitaires", "Yarn Test","React"],
       "description": "",
+      "images": "./img/77Events.png",
       "img": "./img/77Events.png",
       "link": ""
     },
@@ -77,6 +87,7 @@
       "date": "Février 2024",
       "languages": ["React", "Redux"],
       "description": "",
+      "images": "./img/argentBank.png",
       "img": "./img/argentBank.png",
       "link": ""
     }

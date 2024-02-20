@@ -4,14 +4,15 @@ import '../Style/Welcome.scss'
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
+import { faPhoneVolume, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Welcome(){
 const [message, setMessage] = useState('');
 const originalMessage = "< Bienvenue, je suis Claudie Michalon, développeuse frontend />";
 const [showPhoneNumber, setShowPhoneNumber] = useState(false);
-const [showStars, setShowStars] = useState(false);
+const [showImage, setShowImage] = useState(true);
+const [showMessage, setShowMessage] = useState(true);
 
 useEffect(() => {
     let index = 0;
@@ -23,24 +24,29 @@ useEffect(() => {
             clearInterval(intervalId);
         }
     }, 150);
+}, []);
 
-    const timeoutId = setTimeout(() => {
-        setShowStars(true);
-    }, 5000);
+useEffect(() => {
+    const imageTimeout = setTimeout(() => {
+        setShowImage(false);
+    }, 6000); // Image disparaît après 6 secondes si l'utilisateur n'a pas scrollé
+
+    const messageTimeout = setTimeout(() => {
+        setShowMessage(false);
+    }, 6000); // Message disparaît après 6 secondes si l'utilisateur n'a pas scrollé
 
     return () => {
-        clearInterval(intervalId);
-        clearTimeout(timeoutId);
+        clearTimeout(imageTimeout);
+        clearTimeout(messageTimeout);
     };
 }, []);
 
 const handlePhoneIconClick = () => {
     setShowPhoneNumber(!showPhoneNumber);
 };
-
 return (
     <section id="Accueil" className='welcomeContainer'>
-        <div className={`helloAndContactContainer ${showStars ? 'hideContent' : ''}`}>
+        <div className= 'helloAndContactContainer'>
             <p>{message}</p>
             <div className='iconContact'>
                 <a href="https://github.com/michalon-claudie">
@@ -56,15 +62,13 @@ return (
             </div>
             {showPhoneNumber && <p className="phoneNumber">+33621646708</p>}
         </div>
-        {showStars && (
-            <div className="stars">
-                <div className="star"></div>
-                <div className="star"></div>
-                <div className="star"></div>
-                {/* Ajoutez autant d'étoiles que nécessaire */}
-            </div>
-        )}
-        {!showStars && <img src={img} alt="MICHALONDevReact" />}
+        {showImage ? (
+                <img src={img} alt="MICHALONDevReact" className="imgTransition" />
+            ) : (
+                <div className="arrowDown">
+                    <FontAwesomeIcon icon={faArrowDown} />
+                </div>
+            )}
     </section>
 );
 }

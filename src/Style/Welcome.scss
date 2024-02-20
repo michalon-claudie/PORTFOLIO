@@ -4,12 +4,6 @@
     align-items: center;
     height:100vh;
     margin:20px 20px 20px 20px;
-    img{
-        box-shadow:3px 5px 32px white;
-        border-radius: 20px;
-        object-fit: cover;
-        width:30%;
-    }
     .helloAndContactContainer{
         .iconContact{
             display: flex;
@@ -26,55 +20,30 @@
         }
 }
 }
-
-.starsVisible .welcomeContainer .helloAndContactContainer {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+.imgTransition{
+    box-shadow:3px 5px 32px white;
+    border-radius: 20px;
+    object-fit: cover;
+    width:21%;
+    transition: fadeOutAnimation 3s ease;
 }
-
-.starsVisible .stars {
-    animation: starsFall 5s linear;
-}
-
-@keyframes starsFall {
+@keyframes fadeOutAnimation {
     0% {
-        transform: translateY(-100%);
+        opacity: 1;
+    }
+    20%{
+        opacity: 0.8;
+    }
+    40%{
+        opacity:0.6;
+    }
+    60%{
+        opacity:0.4;
+    }
+    80%{
+        opacity:0.2;
     }
     100% {
-        transform: translateY(100%);
+        opacity: 0;
     }
-}
-
-.hideContent .helloAndContactContainer {
-    display: none;
-}
-
-.stars {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.star {
-    width: 10px;
-    height: 10px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    position: absolute;
-}
-
-.star:nth-child(1) {
-    top: -20px;
-    left: 20%;
-}
-
-.star:nth-child(2) {
-    top: -20px;
-    left: 50%;
-}
-
-.star:nth-child(3) {
-    top: -20px;
-    left: 80%;
 }

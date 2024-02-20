@@ -4,6 +4,7 @@ import Welcome from '../Component/Welcome'
 import Naviguation from '../Component/Naviguation'
 import About from '../Component/About'
 import Projects from '../Component/Projects'
+import Resume from '../Component/Resume'
 import Contact from '../Component/Contact'
 import Footer from '../Component/Footer'
 import '../Style/Home.scss'
@@ -39,6 +40,7 @@ export default function Home()
                 <Naviguation/>
                 <About/>
                 <Projects/>
+                <Resume/>
                 <Contact/>
                 <Footer/>
             </main>
