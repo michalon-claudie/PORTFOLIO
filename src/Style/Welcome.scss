@@ -5,6 +5,11 @@
     height:100vh;
     margin:20px 20px 20px 20px;
     .helloAndContactContainer{
+        @media screen and (max-width: 700px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         .iconContact{
             display: flex;
             gap:20px;
@@ -29,7 +34,12 @@
     object-fit: cover;
     width:21%;
     transition: fadeOutAnimation 3s ease;
+    @media screen and (max-width: 700px) {
+        width:34%;
+        margin:30px;
+    }
 }
+
 @keyframes fadeOutAnimation {
     0% {
         opacity: 1;
