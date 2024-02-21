@@ -4,6 +4,9 @@
     align-items: center;
     height:100vh;
     margin:20px 20px 20px 20px;
+    @media screen and (max-width: 700px) {
+        flex-direction: column;
+    }
     .helloAndContactContainer{
         @media screen and (max-width: 700px) {
             display: flex;
