@@ -4,7 +4,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export default function (){
+export default function Contact(){
     const [showPhoneNumber, setShowPhoneNumber] = useState(false);
     const handlePhoneIconClick = () => {
         setShowPhoneNumber(!showPhoneNumber);
