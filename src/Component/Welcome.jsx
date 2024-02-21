@@ -4,13 +4,14 @@ import '../Style/Welcome.scss'
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faPhoneVolume, faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { faPhoneVolume} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Welcome(){
 const [message, setMessage] = useState('');
 const originalMessage = "< Bienvenue, je suis Claudie Michalon, développeuse frontend />";
 const [showPhoneNumber, setShowPhoneNumber] = useState(false);
+const [showStars, setShowStars] = useState(false);
 
 useEffect(() => {
     let index = 0;
@@ -22,6 +23,14 @@ useEffect(() => {
             clearInterval(intervalId);
         }
     }, 150);
+    const starsTimer = setTimeout(() => {
+        setShowStars(true);
+    }, 6000); 
+
+    return () => {
+        clearInterval(intervalId);
+        clearTimeout(starsTimer);
+    };
 }, []);
 
 
@@ -45,7 +54,13 @@ return (
                 <FontAwesomeIcon icon={faPhoneVolume} onClick={handlePhoneIconClick} className={showPhoneNumber ? 'active' : ''} />
             </div>
             {showPhoneNumber && <p className="phoneNumber">+33621646708</p>}
-        </div>
+            </div>
+            {showStars && 
+            <div className='stars'>
+                <div className="star star1"></div>
+                <div className="star star2"></div>
+                <div className="star star3"></div>
+            </div>}
             <img src={img} alt="MICHALONDevReact" className="imgTransition" />
     </section>
 );
