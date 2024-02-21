@@ -13,6 +13,9 @@
         flex-direction: column;
         gap: 27px;
         width: 40%;
+        @media screen and (max-width: 700px) {
+            width:76%;
+        }
         h2,img{
             @media screen and (max-width: 700px) {
                 display: none;
@@ -35,7 +38,6 @@
         }
         .skill {
             margin-bottom: 10px;
-            width:90%;
                 .skill-name {
                 font-weight: bold;
                 }
@@ -60,12 +62,15 @@
     @media screen and (max-width: 1035px) and (min-width: 700px) {
         gap: 0%;
     }
-    @media screen and (max-width: 463px) {
+    @media screen and (max-width: 700px) {
         width:76%;
     }
     .skill {
     margin-bottom: 10px;
     width:90%;
+    @media screen and (max-width: 700px) {
+        width:100%;
+    }
         .skill-name {
         font-weight: bold;
         }
@@ -82,5 +87,3 @@
     }
     }
 }
-
-/*1035px skills gap 0% - 700px on elenelve le cv*/
