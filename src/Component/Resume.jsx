@@ -12,10 +12,12 @@ export default function Resume(){
         <div className='resumePart'>
             <h2>My Resume</h2>
             <img src={resume} alt="myResume"/>
+            <Skill name="Education - Openclassroom Intégrateur Web" level={100} />
+            <Skill name="Education - Autodidacte Wordpress- UX Design" level={50} />
             <button onClick={downloadResume}>Download CV</button>
         </div>
         <div className="skills">
-            <h3>Skills</h3>
+            <h2>Skills</h2>
             <Skill name="Html" level={90} />
             <Skill name="CSS" level={90} />
             <Skill name="Sass" level={85} />

@@ -33,6 +33,23 @@
         padding-block:15px;
         width: 50%;
         }
+        .skill {
+            margin-bottom: 10px;
+            width:90%;
+                .skill-name {
+                font-weight: bold;
+                }
+                .progress-bar {
+                background-color: #eee;
+                height: 10px;
+                border-radius: 5px;
+                    .progress {
+                    height: 100%;
+                    background-color: #007bff; 
+                    border-radius: 5px;
+                    }
+                }
+            }
     }
     .skills {
     margin-top: 20px;
