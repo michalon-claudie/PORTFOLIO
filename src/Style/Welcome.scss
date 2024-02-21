@@ -12,6 +12,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap:20px;
         }
         .iconContact{
             display: flex;
@@ -37,8 +38,12 @@
     object-fit: cover;
     width:21%;
     transition: fadeOutAnimation 3s ease;
-    @media screen and (max-width: 700px) {
-        width:34%;
+    @media screen and (min-width:461px) and (max-width:700px) {
+        width:40%;
+        margin:30px;
+    }
+    @media screen and (max-width: 460px) {
+        width:61%;
         margin:30px;
     }
 }
