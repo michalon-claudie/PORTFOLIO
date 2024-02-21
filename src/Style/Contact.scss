@@ -4,6 +4,12 @@
     align-items: center;
     border-top: white 3px;
     padding:70px 0px;
+    h1{
+        @media screen and (max-width: 463px) {
+            font-size:17px;
+            text-align: center;
+        }
+    }
     .iconContact{
         display: flex;
         gap: 20px;    

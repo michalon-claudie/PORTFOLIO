@@ -16,9 +16,20 @@ export default function Resume(){
         </div>
         <div className="skills">
             <h3>Skills</h3>
-            <Skill name="JavaScript" level={80} />
-            <Skill name="React" level={90} />
-            {/* */}
+            <Skill name="Html" level={90} />
+            <Skill name="CSS" level={90} />
+            <Skill name="Sass" level={85} />
+            <Skill name="JavaScript" level={70} />
+            <Skill name="React" level={80} />
+            <Skill name="Redux" level={70} />
+            <Skill name="SEO" level={80} />
+            <Skill name="Optimisation" level={80} />
+            <Skill name="Gestion de projet" level={80} />
+            <Skill name="Github/GitLab" level={60} />
+            <Skill name="Responsive" level={85} />
+            <Skill name="Node JS" level={40} />
+            <Skill name="Mongodb" level={30} />
+            <Skill name="WordPress" level={30} />
         </div>
     </section>
     );

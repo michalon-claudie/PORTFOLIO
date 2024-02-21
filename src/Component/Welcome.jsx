@@ -46,10 +46,7 @@ return (
             </div>
             {showPhoneNumber && <p className="phoneNumber">+33621646708</p>}
         </div>
-                <img src={img} alt="MICHALONDevReact" className="imgTransition" />
-                <div className="arrowDown">
-                    <FontAwesomeIcon icon={faArrowDown} />
-                </div>
+            <img src={img} alt="MICHALONDevReact" className="imgTransition" />
     </section>
 );
 }

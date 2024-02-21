@@ -7,43 +7,44 @@
       "description": "Site de location type Booking crée en HTML et CSS.",
       "img": "./img/booki2.webp",
       "cover":"./img/booki.png",
-      "link": ""
+      "link": "https://github.com/michalon-claudie/BOOKI"
     },
     {
         "id": "1",
         "title": "Oh My Food",
         "date": "Juillet 2023",
         "languages": ["HTML, CSS, Sass"],
-        "description": "",
+        "description": "Site de commande en ligne crée en HTML,CSS,SaSS",
         "img": "./img/omf2.png",
         "cover":"./img/ohmyfood.png",
-        "link": ""
+        "link": "https://github.com/michalon-claudie/Projet4OC"
       },
     {
       "id": "2",
       "title": "Print-it",
       "date": "Aout 2023",
       "languages": ["JavaScript"],
-      "description": "",
+      "description": "Gestion du carrousel sur ce site",
       "img": "./img/printIt.png",
-      "cover":"./img/printIt.png"
+      "cover":"./img/printIt.png",
+      "link":"https://github.com/michalon-claudie/print-it-projet5"
     },
     {
       "id": "3",
       "title": "Sophie Bluel",
       "date": "Septembre 2023",
       "languages": ["JavaScript"],
-      "description": "",
+      "description": "Création d'une site pour une photographe en JS",
       "img": "./img/sophieBluel.png",
       "cover": "./img/sophieBluel.png",
-      "link": ""
+      "link": "https://github.com/michalon-claudie/Project_6"
     },
     {
       "id": "4",
       "title": "Menu Maker by Qwenta",
       "date": "Octobre 2023",
       "languages": ["Outils de veille, gestion de projet, choix des technos"],
-      "description": "",
+      "description": "Planification et gestion d'un projet",
       "img": "./img/Qwenta.png",
       "cover": "./img/Qwenta.png",
       "link": ""
@@ -53,39 +54,39 @@
       "title": "Kasa",
       "date": "Octobre 2023",
       "languages": ["React", "Yarn"],
-      "description": "",
+      "description": "Site de location immobilière en React",
       "img": "./img/kasa.png",
       "cover": "./img/kasa.png",
-      "link": ""
+      "link": "https://github.com/michalon-claudie/Projet_8OC"
     },
     {
       "id": "6",
       "title": "Nina Carducci",
       "date": "Novembre 2023",
       "languages": ["SEO", "Performance","Lighthouse/Wave"],
-      "description": "",
+      "description": "optimisation d'un site de photographe",
       "img": "./img/carducci.png",
       "cover":"./img/carducci.png",
-      "link": ""
+      "link": "https://michalon-claudie.github.io/NinaCarducciProject9/"
     },
     {
       "id": "7",
       "title": "77Events",
       "date": "Janvier 2024",
       "languages": ["Tests unitaires", "Yarn Test","React"],
-      "description": "",
+      "description": "Debogage d'un site évenementiel",
       "img": "./img/77Events.png",
       "cover": "./img/77Events.png",
-      "link": ""
+      "link": "https://github.com/michalon-claudie/724EVENTS-Projet10OC"
     },
     {
       "id": "8",
       "title": "Argent Bank",
       "date": "Février 2024",
       "languages": ["React", "Redux"],
-      "description": "",
+      "description": "Création d'un site bancaire sécurisé",
       "img": "./img/argentBank.png",
       "cover": "./img/argentBank.png",
-      "link": ""
+      "link": "https://github.com/michalon-claudie/ArgentBank-website"
     }
   ]

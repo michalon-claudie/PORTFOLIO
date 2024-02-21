@@ -17,6 +17,9 @@
         p{
             font-size: 27px;
             font-weight:bold;
+            @media screen and (max-width: 700px) {
+                font-size:16px;
+            }
         }
 }
 }

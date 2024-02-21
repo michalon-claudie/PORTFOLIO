@@ -12,12 +12,23 @@
     justify-content: center;
     flex-wrap: wrap;
     padding: 20px 30px;
+    @media screen and (max-width: 700px) {
+        padding: 20px 10px;
+    }
     .project{
         width:23%;
         display: flex;
         padding: 25px 25px;
         height:252px;
         transition: all 0.3s ease;
+        @media screen and (max-width: 700px) and (min-width: 463px){
+            width:33%;
+            height:200px;
+        }
+        @media screen and (max-width: 463px) {
+            width:46%;
+            height:200px;
+        }
         &:hover {
             transform: scale(1.1); 
             filter: brightness(130%); 
@@ -55,6 +66,12 @@
             img{
                 width: 74%;
                 border-radius: 25px;
+            }
+            a{
+            color:paleturquoise;
+            &:hover{
+                text-decoration: none;
+            }
             }
         }
         .close {

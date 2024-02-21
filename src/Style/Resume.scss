@@ -2,16 +2,30 @@
     display: flex;
     padding: 20px 40px;
     justify-content: space-between;
+    margin-top:60px;
+    @media screen and (max-width: 700px) {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
     .resumePart{
         display: flex;
         flex-direction: column;
         gap: 27px;
         width: 40%;
+        h2,img{
+            @media screen and (max-width: 700px) {
+                display: none;
+            }
+        }
         button{
         appearance: none;
         font-family: "Kode Mono", monospace;
         font-weight: 500;
         color: white;
+        @media screen and (max-width: 463px) {
+            width:100%;
+        }
         cursor: pointer;
         box-sizing: border-box;
         background-color: #0d1c56;
@@ -23,9 +37,18 @@
     .skills {
     margin-top: 20px;
     width: 40%;
+    gap:2%;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 1035px) and (min-width: 700px) {
+        gap: 0%;
+    }
+    @media screen and (max-width: 463px) {
+        width:76%;
+    }
     .skill {
     margin-bottom: 10px;
-    width:35%;
+    width:90%;
         .skill-name {
         font-weight: bold;
         }
@@ -42,3 +65,5 @@
     }
     }
 }
+
+/*1035px skills gap 0% - 700px on elenelve le cv*/
