@@ -1,4 +1,6 @@
 import React from 'react';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Modal({ project, closeModal }) {
 
@@ -13,6 +15,11 @@ export default function Modal({ project, closeModal }) {
                     <p>Languages: {project.languages.join(', ')}</p>
                     <p>{project.infos || project.description}</p>
                     {project.link && <a href={project.link}>Voir le projet</a>}
+                    {project.githubLink && (
+                        <a href={project.githubLink} className="github-link">
+                            <FontAwesomeIcon icon={faGithub} />
+                        </a>
+                    )}
                 </div>
             </div>
         </div>

@@ -17,7 +17,8 @@
         "description": "Site de commande en ligne crée en HTML,CSS,SaSS",
         "img": "./img/omf2.webp",
         "cover":"./img/ohmyfood.webp",
-        "link": "https://github.com/michalon-claudie/Projet4OC"
+        "link": "https://michalon-claudie.github.io/Projet4OC/",
+        "githubLink": "https://github.com/michalon-claudie/Projet4OC"
       },
     {
       "id": "2",
@@ -27,7 +28,8 @@
       "description": "Gestion du carrousel sur ce site",
       "img": "./img/printIt.webp",
       "cover":"./img/printIt.webp",
-      "link":"https://github.com/michalon-claudie/print-it-projet5"
+      "link":"https://michalon-claudie.github.io/print-it-projet5/",
+      "githubLink": "https://github.com/michalon-claudie/print-it-projet5"
     },
     {
       "id": "3",
@@ -67,7 +69,8 @@
       "description": "optimisation d'un site de photographe",
       "img": "./img/carducci.webp",
       "cover":"./img/carducci.webp",
-      "link": "https://michalon-claudie.github.io/NinaCarducciProject9/"
+      "link":"https://michalon-claudie.github.io/NinaCarducciProject9/",
+      "githubLink": "https://github.com/michalon-claudie/NinaCarducciProject9"
     },
     {
       "id": "7",
