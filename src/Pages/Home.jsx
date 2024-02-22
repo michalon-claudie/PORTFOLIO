@@ -4,6 +4,7 @@ import Welcome from '../Component/Welcome'
 import Naviguation from '../Component/Naviguation'
 import About from '../Component/About'
 import Banner from '../Component/Banner'
+import Banner2 from '../Component/Banner2'
 import Projects from '../Component/Projects'
 import Resume from '../Component/Resume'
 import Contact from '../Component/Contact'
@@ -43,6 +44,7 @@ export default function Home()
                 <Banner/>
                 <Projects/>
                 <Resume/>
+                <Banner2/>
                 <Contact/>
                 <Footer/>
             </main>
