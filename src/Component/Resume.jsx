@@ -1,5 +1,5 @@
 import React from 'react'
-import resume from '../images/myresume.png'
+import resume from '../images/myresume.webp'
 import pdfResume from '../images/CV_MICHALON_Claudie_012024.pdf'
 import '../Style/Resume.scss'
 
