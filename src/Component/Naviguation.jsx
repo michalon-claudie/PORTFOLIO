@@ -71,7 +71,7 @@ export default function Naviguation (){
                 <a href="#Accueil" ref={accueilRef} className={activeSection === 'Accueil' ? 'active' : ''}>Accueil</a>
                 <a href="#A_propos" ref={aproposRef} className={activeSection === 'A_propos' ? 'active' : ''}>A propos</a>
                 <a href="#Projets" ref={projetsRef} className={activeSection === 'Projets' ? 'active' : ''}>Projets</a>
-                <a href="#Resume" ref={resumeRef} className={activeSection === 'Resume' ? 'active' : ''}>Resume CV </a>
+                <a href="#Resume" ref={resumeRef} className={activeSection === 'Resume' ? 'active' : ''}>Mon CV </a>
                 <a href="#Contact" ref={contactRef} className={activeSection === 'Contact' ? 'active' : ''}>Contact</a>
             </nav>
             </div>

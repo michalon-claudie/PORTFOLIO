@@ -10,14 +10,14 @@ export default function Resume(){
     return(
     <section id="Resume"className='resume'>
         <div className='resumePart'>
-            <h2>My Resume</h2>
+            <h2>Mon CV</h2>
             <img src={resume} alt="myResume"/>
             <Skill name="Education - Openclassroom Intégrateur Web" level={100} />
             <Skill name="Education - Autodidacte Wordpress- UX Design" level={50} />
-            <button onClick={downloadResume}>Download CV</button>
+            <button onClick={downloadResume}>Télécharger le CV</button>
         </div>
         <div className="skills">
-            <h2>Skills</h2>
+            <h2>Mes Compétences</h2>
             <Skill name="Html" level={90} />
             <Skill name="CSS" level={90} />
             <Skill name="Sass" level={85} />
