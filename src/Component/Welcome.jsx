@@ -51,7 +51,9 @@ return (
                 <a href="MAILTO:michalon.claudie@outlook.fr" aria-label='Send me an email'>
                     <FontAwesomeIcon icon={faEnvelope} />
                 </a>
-                <FontAwesomeIcon icon={faPhoneVolume} onClick={handlePhoneIconClick} className={showPhoneNumber ? 'active' : ''} />
+                <a href="tel:+33621646708" aria-label='Call me'>
+                <FontAwesomeIcon icon={faPhoneVolume} />
+                </a>
             </div>
             {showPhoneNumber && <p className="phoneNumber">+33621646708</p>}
             </div>
