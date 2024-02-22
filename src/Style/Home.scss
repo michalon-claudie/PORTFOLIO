@@ -199,3 +199,11 @@ h1{
     left: 70%;
 }
 /***end-loader***/
+
+::-webkit-scrollbar-thumb {
+    background-color: blueviolet; 
+    border-radius: 5px; 
+}
+::-webkit-scrollbar-track {
+    background-color: brown; 
+}

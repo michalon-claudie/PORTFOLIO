@@ -1,0 +1,11 @@
+.BannerP{
+    text-align: center;
+    font-size:20px;
+    color:darkturquoise;
+    font-weight: bold;
+    background: url(../images/alligator_50.webp);
+    padding:10%;
+    @media screen and (max-width: 463px) {
+        background: url(../images/alliMobile.webp);
+    }
+}

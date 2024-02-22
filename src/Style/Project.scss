@@ -43,6 +43,18 @@
     }
 }
 }
+.modal::-webkit-scrollbar-thumb {
+    background-color: blueviolet; 
+    border-radius: 5px; 
+}
+.modal::-webkit-scrollbar-track {
+    background-color: brown; 
+}
+.modal{
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -53,6 +65,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     .modal {
         background-color: #0d1c56;
         padding: 20px;
@@ -83,3 +96,15 @@
         }
     }
 }
+
+::-webkit-scrollbar-thumb {
+    background-color: blueviolet; 
+    border-radius: 5px; 
+}
+::-webkit-scrollbar-track {
+    background-color: brown; 
+}
+::-webkit-scrollbar-button{
+    display:none;
+}
+

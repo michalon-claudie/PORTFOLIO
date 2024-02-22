@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import Welcome from '../Component/Welcome'
 import Naviguation from '../Component/Naviguation'
 import About from '../Component/About'
+import Banner from '../Component/Banner'
 import Projects from '../Component/Projects'
 import Resume from '../Component/Resume'
 import Contact from '../Component/Contact'
@@ -39,6 +40,7 @@ export default function Home()
                 <Welcome/>
                 <Naviguation/>
                 <About/>
+                <Banner/>
                 <Projects/>
                 <Resume/>
                 <Contact/>
