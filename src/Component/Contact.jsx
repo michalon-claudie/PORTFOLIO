@@ -5,10 +5,6 @@ import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Contact(){
-    const [showPhoneNumber, setShowPhoneNumber] = useState(false);
-    const handlePhoneIconClick = () => {
-        setShowPhoneNumber(!showPhoneNumber);
-    };
 
     return(
         <section className='ContactMe'>
@@ -21,7 +17,6 @@ export default function Contact(){
                 <FontAwesomeIcon icon={faPhoneVolume} />
                 </a>
             </div>
-            {showPhoneNumber && <p className="phoneNumber">+33621646708</p>}
         </section>
     )
 }
