@@ -1,4 +1,4 @@
-import React , {useState} from 'react'
+import React from 'react'
 import '../Style/Contact.scss'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
