@@ -50,34 +50,14 @@
     }
 }
 
-@keyframes fadeOutAnimation {
-    0% {
-        opacity: 1;
-    }
-    20%{
-        opacity: 0.8;
-    }
-    40%{
-        opacity:0.6;
-    }
-    60%{
-        opacity:0.4;
-    }
-    80%{
-        opacity:0.2;
-    }
-    100% {
-        opacity: 0;
-    }
-}
 
-.star {
+.starw {
     position: absolute;
     width: 10px;
     height: 10px;
     background-color: #ffffff;
     border-radius: 50%;
-    animation: blinkStar 5s infinite alternate;
+    animation: blinkStar 5s infinite alternate,fadeOutStars 5s ease-in-out;
 }
 
 @keyframes blinkStar {
@@ -107,18 +87,44 @@
     }
 }
 
-.star1 {
-    top: 50%;
+@keyframes fadeOutStars {
+    0% {
+        top: 2%;
+        left: 10%;
+    }
+    20% {
+        top: 3%;
+        left: 10%;
+    }
+    40% {
+        top: 4%;
+        left: 10%;
+    }
+    60% {
+        top: 5%;
+        left: 10%;
+    }
+    80% {
+        top: 6%;
+        left: 10%;
+    }
+    100% {
+        top: 8%;
+        left: 10%;
+    }
+}
+.starw1 {
+    top: 98vh;
     left: 10%;
 }
 
-.star2 {
-    top: 20%;
+.starw2 {
+    top: 98vh;
     left: 30%;
 }
 
-.star3 {
-    top: 70%;
+.starw3 {
+    top: 98vh;
     left: 70%;
 }
 /***end-loader***/

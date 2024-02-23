@@ -11,60 +11,60 @@ export default function Naviguation (){
     const navBarRef = useRef(null);
     
     useEffect(() => {
-        const handleScroll = () => {
-            const scrollPosition = window.scrollY;
-            if (
-              scrollPosition >= accueilRef.current.offsetTop &&
-              scrollPosition < projetsRef.current.offsetTop
-            ) {
-              setActiveSection('Accueil');
-            navBarRef.current.classList.add('fixed-nav');
-            } else if (
-              scrollPosition >= projetsRef.current.offsetTop &&
-              scrollPosition < aproposRef.current.offsetTop
-            ) {
-              setActiveSection('A_propos');
-              navBarRef.current.classList.remove('fixed-nav');
-            } else if (
-              scrollPosition >= aproposRef.current.offsetTop &&
-              scrollPosition < contactRef.current.offsetTop
-            ) {
-              setActiveSection('Project');
-              navBarRef.current.classList.remove('fixed-nav');
-            } else if (
-              scrollPosition >= contactRef.current.offsetTop
-            ) {
-              setActiveSection('Resume');
-              navBarRef.current.classList.remove('fixed-nav');
-              } else if (
-                scrollPosition >= contactRef.current.offsetTop
-              ){
-                setActiveSection('Contact');
-                navBarRef.current.classList.remove('fixed-nav');
-              } else {
-                setActiveSection('');
-                navBarRef.current.classList.remove('fixed-nav');
-              }
-      
-            if (scrollPosition >= navBarRef.current.offsetTop) {
-              navBarRef.current.classList.add('fixed-nav');
-            } else {
-              navBarRef.current.classList.remove('fixed-nav');
-            }
-          };
-          const handleScrollWithLoad = () => {
-            handleScroll();
-            window.addEventListener('scroll', handleScroll);
-          };
-      
-          handleScrollWithLoad();
-      
-          window.addEventListener('load', handleScrollWithLoad);
-      
-          return () => {
-            window.removeEventListener('scroll', handleScroll);
-          };
-        }, []);
+      const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        if (
+          scrollPosition >= accueilRef.current.offsetTop &&
+          scrollPosition < projetsRef.current.offsetTop
+        ) {
+          setActiveSection('Accueil');
+        navBarRef.current.classList.add('fixed-nav');
+        } else if (
+          scrollPosition >= projetsRef.current.offsetTop &&
+          scrollPosition < aproposRef.current.offsetTop
+        ) {
+          setActiveSection('A_propos');
+          navBarRef.current.classList.remove('fixed-nav');
+        } else if (
+          scrollPosition >= aproposRef.current.offsetTop &&
+          scrollPosition < contactRef.current.offsetTop
+        ) {
+          setActiveSection('Project');
+          navBarRef.current.classList.remove('fixed-nav');
+        } else if (
+          scrollPosition >= contactRef.current.offsetTop
+        ) {
+          setActiveSection('Resume');
+          navBarRef.current.classList.remove('fixed-nav');
+          } else if (
+            scrollPosition >= contactRef.current.offsetTop
+          ){
+            setActiveSection('Contact');
+            navBarRef.current.classList.remove('fixed-nav');
+          } else {
+            setActiveSection('');
+            navBarRef.current.classList.remove('fixed-nav');
+          }
+  
+        if (scrollPosition >= navBarRef.current.offsetTop) {
+          navBarRef.current.classList.add('fixed-nav');
+        } else {
+          navBarRef.current.classList.remove('fixed-nav');
+        }
+      };
+        const handleScrollWithLoad = () => {
+          handleScroll();
+          window.addEventListener('scroll', handleScroll);
+        };
+    
+        handleScrollWithLoad();
+    
+        window.addEventListener('load', handleScrollWithLoad);
+    
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
         return (
             <div className={`NavBar ${activeSection === 'Accueil' ? 'active' : ''}`} ref={navBarRef}>
             <nav className='navList'>

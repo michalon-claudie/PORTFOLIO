@@ -10,8 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export default function Welcome(){
 const [message, setMessage] = useState('');
 const originalMessage = "< Bienvenue, je suis Claudie Michalon, développeuse frontend />";
-const [showPhoneNumber, setShowPhoneNumber] = useState(false);
-const [showStars, setShowStars] = useState(false);
+const [showStars,setShowStars] = useState(false);
 
 useEffect(() => {
     let index = 0;
@@ -33,10 +32,19 @@ useEffect(() => {
     };
 }, []);
 
+useEffect(() => {
+    // Ajouter les étoiles après 5 secondes
+    const timeoutId = setTimeout(() => {
+      const starElement = document.createElement('div');
+      starElement.classList.add('star');
+      document.body.appendChild(starElement);
+    }, 5000);
 
-const handlePhoneIconClick = () => {
-    setShowPhoneNumber(!showPhoneNumber);
-};
+    // Nettoyer le timeout lorsque le composant est démonté
+    return () => clearTimeout(timeoutId);
+  }, []);
+
+
 return (
     <section id="Accueil" className='welcomeContainer'>
         <div className= 'helloAndContactContainer'>
@@ -55,13 +63,12 @@ return (
                 <FontAwesomeIcon icon={faPhoneVolume} />
                 </a>
             </div>
-            {showPhoneNumber && <p className="phoneNumber">+33621646708</p>}
             </div>
             {showStars && 
             <div className='stars'>
-                <div className="star star1"></div>
-                <div className="star star2"></div>
-                <div className="star star3"></div>
+                <div className="starw starw1"></div>
+                <div className="starw starw2"></div>
+                <div className="starw starw3"></div>
             </div>}
             <img src={img} alt="MICHALONDevReact" className="imgTransition" />
     </section>
