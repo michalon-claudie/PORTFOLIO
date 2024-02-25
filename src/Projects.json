@@ -7,7 +7,8 @@
       "description": "Site de location type Booking crée en HTML et CSS.",
       "img": "./img/booki2.webp",
       "cover":"./img/booki.webp",
-      "link": "https://github.com/michalon-claudie/BOOKI"
+      "link": "https://michalon-claudie.github.io/BOOKI/",
+      "githubLink":"https://github.com/michalon-claudie/BOOKI"
     },
     {
         "id": "1",
@@ -80,6 +81,7 @@
       "description": "Debogage d'un site évenementiel",
       "img": "./img/77Events.webp",
       "cover": "./img/77Events.webp",
+      "link": "https://724eventsmichalon.netlify.app/",
       "githubLink": "https://github.com/michalon-claudie/724EVENTS-Projet10OC"
     },
     {
