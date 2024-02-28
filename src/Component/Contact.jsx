@@ -10,7 +10,7 @@ export default function Contact(){
         <section className='ContactMe'>
             <h1>Un projet en tête ? Parlons-en !</h1>
             <div className='iconContact'>
-                <a href ="MAILTO:michalon.claudie@outlook.fr">
+                <a href ="MAILTO:michalon.claudie@outlook.fr" aria-label='Send email'>
                     <FontAwesomeIcon icon={faEnvelope} />
                 </a>
                 <a href="tel:+33621646708" aria-label='Call me'>
