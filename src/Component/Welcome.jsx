@@ -32,17 +32,7 @@ useEffect(() => {
     };
 }, []);
 
-useEffect(() => {
-    // Ajouter les étoiles après 5 secondes
-    const timeoutId = setTimeout(() => {
-      const starElement = document.createElement('div');
-      starElement.classList.add('star');
-      document.body.appendChild(starElement);
-    }, 5000);
 
-    // Nettoyer le timeout lorsque le composant est démonté
-    return () => clearTimeout(timeoutId);
-  }, []);
 
 
 return (
