@@ -6,6 +6,7 @@ import About from '../Component/About'
 import Banner from '../Component/Banner'
 import Banner2 from '../Component/Banner2'
 import Projects from '../Component/Projects'
+import Caroussel from '../Component/Carrousel'
 import Resume from '../Component/Resume'
 import Contact from '../Component/Contact'
 import Footer from '../Component/Footer'
@@ -25,6 +26,10 @@ export default function Home()
         return () => clearTimeout(timer);
     }, []);
   
+    const actualProject = {
+        "title": "Italiano Segreto",
+        "images": ["../../img/Venise3.jpg", "../../img/booki.webp", "../../img/carducci.webp"]
+    }
     return (
         <div>
             {loading ? (
@@ -43,6 +48,7 @@ export default function Home()
                 <About/>
                 <Banner/>
                 <Projects/>
+                <Caroussel project={actualProject} />
                 <Resume/>
                 <Banner2/>
                 <Contact/>

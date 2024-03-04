@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export default function Contact(){
 
     return(
-        <section className='ContactMe'>
+        <section id="Contact"className='ContactMe'>
             <h1>Un projet en tête ? Parlons-en !</h1>
             <div className='iconContact'>
                 <a href ="MAILTO:michalon.claudie@outlook.fr" aria-label='Send email'>

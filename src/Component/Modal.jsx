@@ -4,10 +4,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Modal({ project, closeModal }) {
 
+    const stopPropagation = (e) => {
+        e.stopPropagation();
+    }; 
     return (
         <div className="modal-overlay" onClick={closeModal}>
             <div className="modal">
-                <div className="modal-content">
+                <div className="modal-content" onClick={stopPropagation}>
                     <span className="close" onClick={closeModal}>&times;</span>
                     <img src={project.img} alt={project.title} />
                     <h3>{project.title}</h3>
