@@ -14,6 +14,7 @@ export default function About(){
                 <br/>
                 J'ai suivi une formation intensive sur la plateforme OpenClassrooms, où j'ai acquis de 
                 nombreuses compétences mais aussi fait de superbes rencontres.<br/>
+                Toutefois, je continue mon apprentissage chaque jour, et je me suis lancée le defi de me former au Back-end. 
                 Je suis animée par la volonté de créer des expériences numériques convaincantes et accessibles,
                 tout en veillant à ce qu'elles respectent les normes éthiques et environnementales. 
                 Mon parcours atypique m'a apporté une perspective unique, alliant sensibilité humaine et expertise technique,

@@ -31,7 +31,7 @@ export default function Resume(){
             <Skill name="Responsive" level={85} />
             <Skill name="Node JS" level={40} />
             <Skill name="Mongodb" level={30} />
-            <Skill name="WordPress" level={30} />
+            <Skill name="Express" level={40} />
         </div>
     </section>
     );
