@@ -19,10 +19,10 @@
             object-fit: cover;
             width:98vw;
             @media screen and (max-width:800px) and (min-width:400px){
-                height:100px;
+                height:170px;
             }
             @media screen and (max-width:400px) and (min-width:200px){
-                height:60px;
+                height:100px;
             }
         }
         h2,a{
@@ -30,9 +30,15 @@
         }
         h2{
             top:50%;
+            @media screen and (max-width:400px) and (min-width:200px){
+                top:10%;
+            }
         }
         a{
             top:82%;
+            @media screen and (max-width:400px) and (min-width:200px){
+                top:67%;
+            }
         }
     }
     }
