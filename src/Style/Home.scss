@@ -67,6 +67,7 @@ h1{
     border-bottom: 2px solid transparent;
     border-left: 2px solid transparent;
     animation: drawC 4s ease-in-out forwards;
+    transition: transform 2s;
 }
 
 @keyframes drawC {
@@ -78,34 +79,49 @@ h1{
         border-bottom: 20px solid transparent;
         border-left: 20px solid transparent;
         opacity:0;
+        transform: rotate(0deg);
     }
-    25% {
+    10%{
         border-top: 20px solid white;
         border-right: 20px solid transparent;
         border-bottom: 20px solid transparent;
         border-left: 20px solid transparent;
         opacity:1;
+        transform: rotate(0deg);
     }
-    50% {
+    25% {
         border-top: 20px solid transparent;
         border-right: 20px solid white;
         border-bottom: 20px solid transparent;
         border-left: 20px solid transparent;
         opacity:1;
+        transform: rotate(0deg);
     }
-    65% {
-        border-top: 20px solid transparent;
-        border-right: 20px solid white;
-        border-bottom: 20px solid transparent;
-        border-left: 20px solid transparent;
-        opacity:0.7;
-    }
-    75% {
-        border-top: 20px solid transparent;
+    50% {
+        border-top: 20px solid white;
         border-right: 20px solid transparent;
         border-bottom: 20px solid white;
         border-left: 20px solid transparent;
-        opacity:0.5;
+        opacity:1;
+        transform: rotate(0deg);
+    }
+    65% {
+        border-top: 20px solid white;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid white;
+        border-left: 20px solid white;
+        opacity:0.7;
+        transform: rotate(0deg);
+    }
+    75% {
+        border-top: 20px solid white;
+        border-right: 0px;
+        border-bottom: 20px solid white;
+        border-left: 20px solid white;
+        width: 40px;
+        height: 40px;
+        opacity:0.7;
+        transform: rotate(360deg);
     }
     85%{
         border-top: 20px solid white;
@@ -114,7 +130,8 @@ h1{
         border-left: 20px solid white;
         width: 40px;
         height: 40px;
-        opacity:0.3;
+        opacity:0.7;
+        transform: rotate(360deg);
     }
     95% {
         border-top: 20px solid white;
@@ -200,10 +217,3 @@ h1{
 }
 /***end-loader***/
 
-::-webkit-scrollbar-thumb {
-    background-color: blueviolet; 
-    border-radius: 5px; 
-}
-::-webkit-scrollbar-track {
-    background-color: brown; 
-}
