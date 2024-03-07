@@ -3,7 +3,6 @@
     flex-direction: row;
     align-items: center;
     color: #121b2b;
-    background: #C9D6FF;
     margin:20px 0px 20px 0px;
     .navList{
         display:flex;
@@ -27,7 +26,7 @@
             cursor:pointer;
             font-size:20px;
             padding:10px;
-            color:black;
+            color:white;
             @media screen and (max-width: 700px) and (min-width: 463px) {
                 font-size: 12px;
             }

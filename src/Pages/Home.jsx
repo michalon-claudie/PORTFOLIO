@@ -28,7 +28,7 @@ export default function Home()
   
     const actualProject = {
         "title": "Italiano Segreto",
-        "images": ["../../img/Venise3.webp", "../../img/firenze.webp", "../../img/pasta.webp"],
+        "images": ["../../img/venise.webp", "../../img/sicilia.webp", "../../img/pasta.webp"],
         "githubLink":"https://github.com/michalon-claudie/ItalianWebsite"
     }
     return (

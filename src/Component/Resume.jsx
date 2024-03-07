@@ -13,7 +13,7 @@ export default function Resume(){
             <h2>Mon CV</h2>
             <img src={resume} alt="myResume"/>
             <Skill name="Education - Openclassroom Intégrateur Web" level={100} />
-            <Skill name="Education - Autodidacte Wordpress- UX Design" level={50} />
+            <Skill name="Education - Autodidacte Back-end:NodeJS/Express et MongoDB" level={50} />
             <button onClick={downloadResume}>Télécharger le CV</button>
         </div>
         <div className="skills">
