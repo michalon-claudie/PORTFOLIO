@@ -5,16 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Carousel({ project }) {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    const [autoplayInterval, setAutoplayInterval] = useState(null);
-
-    useEffect(() => {
-        // Définir l'intervalle de défilement automatique
-        const interval = setInterval(goToNextImage, 5000); // Changer d'image toutes les 5 secondes
-        setAutoplayInterval(interval);
-
-        // Nettoyer l'intervalle lorsque le composant est démonté
-        return () => clearInterval(interval);
-    }, [currentImageIndex]); // Mettre à jour l'effet lors du changement d'index d'image
 
     const goToPreviousImage = () => {
         const newIndex = (currentImageIndex - 1 + project.images.length) % project.images.length;
