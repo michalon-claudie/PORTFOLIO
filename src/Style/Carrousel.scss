@@ -3,7 +3,7 @@
     align-items: center;
     flex-direction: column;
 .carousel{
-    padding:40px 0px;
+    padding:20px 0px;
     display: flex;
     align-items: center;
     .project{
@@ -31,7 +31,7 @@
         h2{
             top:50%;
             @media screen and (max-width:400px) and (min-width:200px){
-                top:10%;
+                display: none;
             }
         }
         a{
@@ -42,4 +42,25 @@
         }
     }
     }
+.bullets{
+    display: flex;
+    gap:10px;
+    @media screen and (max-width:800px) and (min-width:400px){
+            gap:40px;
+    }
+    .bullet{
+        background-color: white;
+        padding-block: 3px;
+        padding-inline: 6px;
+        border-width: 0px;
+        border-style: outset;
+        border-color: white;
+        border-image: initial;
+        cursor:pointer;
+        border-radius: 6px;
+        @media screen and (max-width:800px) and (min-width:400px){
+            padding-inline: 16px;
+    }
+    }
+}
 }
