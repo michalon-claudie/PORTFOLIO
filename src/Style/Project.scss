@@ -25,6 +25,8 @@
         transition: all 0.3s ease;
         border-top: 1px white;
         border-bottom: 1px white;
+        position: relative;
+        overflow: hidden;
         @media screen and (max-width: 700px) and (min-width: 463px){
             width:33%;
             height:200px;
@@ -36,6 +38,27 @@
         &:hover {
             transform: scale(1.1); 
             filter: brightness(50%); 
+        }
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px; 
+            background-color: white;
+            transition: width 0.5s ease; 
+        }
+        &::before {
+            top: 0;
+            left: 0;
+        }
+        &::after {
+            bottom: 0;
+            right: 0;
+        }
+        &:hover::before,
+        &:hover::after {
+            width: 100%;
         }
         img{
             object-fit: cover;
