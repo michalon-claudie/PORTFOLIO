@@ -1,20 +1,10 @@
-import React, {useState,useEffect} from 'react'
+import React, {useState} from 'react'
 import '../Style/Carrousel.scss'
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Carousel({ project }) {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-    const goToPreviousImage = () => {
-        const newIndex = (currentImageIndex - 1 + project.images.length) % project.images.length;
-        setCurrentImageIndex(newIndex);
-    };
-
-    const goToNextImage = () => {
-        const newIndex = (currentImageIndex + 1) % project.images.length;
-        setCurrentImageIndex(newIndex);
-    };
 
     const goToImage = (index) => {
         setCurrentImageIndex(index);
