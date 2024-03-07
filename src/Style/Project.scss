@@ -23,7 +23,7 @@
         height:226px;
         padding:15px;
         transition: all 0.3s ease;
-        border-top: 1px white;
+        border-left: 1px white;
         border-bottom: 1px white;
         position: relative;
         overflow: hidden;
@@ -76,11 +76,6 @@
 .modal::-webkit-scrollbar-track {
     background-color: brown; 
 }
-.modal{
-    overflow-y: auto;
-    scrollbar-width: thin;
-}
-
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -91,7 +86,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    .modal-slide-right {
+        animation: slideInRight 0.5s forwards;
+    }
     .modal {
         background-color: #0d1c56;
         padding: 20px;
@@ -100,11 +97,14 @@
         max-height: 80%;
         overflow: auto;
         position: relative;
+        overflow-y: auto;
+        scrollbar-width: thin;
         .modal-content{
             color:white;
+            animation: slideInRight 1s forwards;
             img{
-                width: 74%;
-                border-radius: 25px;
+                width: 50%;
+                border-radius: 10px;
             }
             a{
             color:paleturquoise;
@@ -119,19 +119,18 @@
             top: 10px;
             right: 10px;
             cursor: pointer;
-            font-size: 20px;
+            font-size: 30px;
         }
     }
 }
-
-::-webkit-scrollbar-thumb {
-    background-color: blueviolet; 
-    border-radius: 5px; 
-}
-::-webkit-scrollbar-track {
-    background-color: brown; 
-}
-::-webkit-scrollbar-button{
-    display:none;
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 

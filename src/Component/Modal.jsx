@@ -9,7 +9,7 @@ export default function Modal({ project, closeModal }) {
     }; 
     return (
         <div className="modal-overlay" onClick={closeModal}>
-            <div className="modal">
+            <div className="modal modal-slide-right">
                 <div className="modal-content" onClick={stopPropagation}>
                     <span className="close" onClick={closeModal}>&times;</span>
                     <img src={project.img} alt={project.title} />
