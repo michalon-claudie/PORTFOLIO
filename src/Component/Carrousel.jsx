@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import '../Style/Carrousel.scss'
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -10,12 +10,20 @@ export default function Carousel({ project }) {
         setCurrentImageIndex(index);
     };
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+            const newIndex = (currentImageIndex + 1) % project.images.length;
+            setCurrentImageIndex(newIndex);
+        }, 5000); 
+        return () => clearInterval(interval);
+    }, [currentImageIndex, project.images.length]);
+
     return (
         <section className='actual_project'>
             <h2>Project Actuel </h2>
             <div className="carousel">
                 <div className="project">
-                    <img src={project.images[currentImageIndex]} alt={project.title} />
+                    <img src={project.images[currentImageIndex]} alt={project.title}/>
                     <h2>{project.title}</h2>
                     <a href={project.githubLink} className="github-link">
                         <FontAwesomeIcon icon={faGithub} />
