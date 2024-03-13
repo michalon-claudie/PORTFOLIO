@@ -11,14 +11,18 @@
         flex-direction: column;
         align-items: center;
         position:relative;
-        animation: appear 1s ease-in-out;
         @media screen and (max-width:800px) and (min-width:400px){
             
         }
         img{
+            display: none;
+        }
+        img.active{
+            display: flex;
             height:200px;
             object-fit: cover;
             width:98vw;
+            animation: appear 5s ease-in-out;
             @media screen and (max-width:800px) and (min-width:400px){
                 height:170px;
             }
@@ -68,10 +72,25 @@
 }
 
 @keyframes appear{
-    from{
+    0%{
         opacity:0;
     }
-    to{
+    15%{
+        opacity:0.5;
+    }
+    30%{
         opacity:1;
+    }
+    45%{
+        opacity:1;
+    }
+    60%{
+        opacity:1;
+    }
+    75%{
+        opacity:0.5;
+    }
+    100%{
+        opacity:0;
     }
 }

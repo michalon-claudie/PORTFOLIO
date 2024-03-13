@@ -23,7 +23,14 @@ export default function Carousel({ project }) {
             <h2>Project Actuel </h2>
             <div className="carousel">
                 <div className="project">
-                    <img src={project.images[currentImageIndex]} alt={project.title}/>
+                {project.images.map((image, index) => (
+                    <img 
+                        key={index} 
+                        src={image} 
+                        alt={project.title} 
+                        className={`carousel-image ${currentImageIndex === index ? 'active' : ''}`}
+                    />
+                ))}
                     <h2>{project.title}</h2>
                     <a href={project.githubLink} className="github-link">
                         <FontAwesomeIcon icon={faGithub} />
@@ -31,7 +38,7 @@ export default function Carousel({ project }) {
                 </div>
             </div>
             <div className="bullets">
-                {project.images.map((image, index) => (
+                {project.images.map((_, index) => (
                     <button
                         key={index}
                         className={`bullet ${currentImageIndex === index ? 'active' : ''}`}
