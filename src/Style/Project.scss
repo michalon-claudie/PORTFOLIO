@@ -99,12 +99,18 @@
         position: relative;
         overflow-y: auto;
         scrollbar-width: thin;
+        @media screen and (max-width: 500px) {
+            max-width:70%;
+        }
         .modal-content{
             color:white;
             animation: slideInRight 1s forwards;
             img{
                 width: 50%;
                 border-radius: 10px;
+                @media screen and (max-width: 500px) {
+                    width:80%;
+                }
             }
             a{
             color:paleturquoise;
@@ -120,6 +126,10 @@
             right: 10px;
             cursor: pointer;
             font-size: 30px;
+            @media screen and (max-width: 500px) {
+                top: -14px;
+                right: -7px;
+            }
         }
     }
 }
