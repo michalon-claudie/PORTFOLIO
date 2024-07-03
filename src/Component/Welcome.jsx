@@ -43,7 +43,7 @@ return (
                 <a href="https://github.com/michalon-claudie" aria-label='Link to Github'>
                     <FontAwesomeIcon icon={faGithub} />
                 </a>
-                <a href="https://www.linkedin.com/in/claudie-michalon-8b1a0422a/"aria-label='Link to LinkedIn'>
+                <a href="https://www.linkedin.com/in/claudie-michalon/"aria-label='Link to LinkedIn'>
                     <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
                 <a href="MAILTO:michalon.claudie@outlook.fr" aria-label='Send me an email'>
