@@ -13,25 +13,26 @@ export default function Resume(){
             <h2>Mon CV</h2>
             <img src={resume} alt="myResume"/>
             <Skill name="Education - Openclassroom Intégrateur Web" level={100} />
-            <Skill name="Education - Autodidacte Back-end:NodeJS/Express et MongoDB" level={50} />
+            <Skill name="Formation en entreprise SVELTEKIT/MySQL/UI" level={100} />
+            <Skill name="Education - Autodidacte UI" level={50} />
             <button onClick={downloadResume}>Télécharger le CV</button>
         </div>
         <div className="skills">
             <h2>Mes Compétences</h2>
             <Skill name="Html" level={90} />
-            <Skill name="CSS" level={90} />
-            <Skill name="Sass" level={85} />
+            <Skill name="CSS/Sass" level={90} />
+            <Skill name="UI" level={40} />
             <Skill name="JavaScript" level={70} />
             <Skill name="React" level={80} />
-            <Skill name="Redux" level={70} />
+            <Skill name="Redux" level={60} />
+            <Skill name="Sveltekit" level={70} />
             <Skill name="SEO" level={80} />
             <Skill name="Optimisation" level={80} />
             <Skill name="Gestion de projet" level={80} />
-            <Skill name="Github/GitLab" level={60} />
+            <Skill name="Github/GitLab" level={70} />
             <Skill name="Responsive" level={85} />
             <Skill name="Node JS" level={40} />
-            <Skill name="Mongodb" level={30} />
-            <Skill name="Express" level={40} />
+            <Skill name="MySQL" level={60} />
         </div>
     </section>
     );
