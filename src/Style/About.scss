@@ -16,12 +16,12 @@
             padding:5%;
         }
     }
-    .AboutSectionP{
+    .AboutSectionPNumberthree,.AboutSectionPNumbertwo,.AboutSectionP{
         display: flex;
         justify-content: center;
-        padding-left: 25%;
-        width:50%;
-        text-align: center;
+        margin-bottom: 10%;
+        padding-left: 15%;
+        width:70%;
         font-size: 19px;
         @media screen and (max-width: 700px) {
             font-size:13px;
