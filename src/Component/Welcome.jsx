@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import img from '../images/MICHALON.webp'
 import '../Style/Welcome.scss'
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
@@ -10,7 +9,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export default function Welcome(){
 const [message, setMessage] = useState('');
 const originalMessage = "< Bienvenue, je suis Claudie Michalon, développeuse frontend />";
-const [showStars,setShowStars] = useState(false);
 
 useEffect(() => {
     let index = 0;
@@ -21,14 +19,10 @@ useEffect(() => {
         if (index > originalMessage.length) {
             clearInterval(intervalId);
         }
-    }, 150);
-    const starsTimer = setTimeout(() => {
-        setShowStars(true);
-    }, 6000); 
+    }, 150); 
 
     return () => {
         clearInterval(intervalId);
-        clearTimeout(starsTimer);
     };
 }, []);
 
@@ -53,14 +47,7 @@ return (
                 <FontAwesomeIcon icon={faPhoneVolume} />
                 </a>
             </div>
-            </div>
-            {showStars && 
-            <div className='stars'>
-                <div className="starw starw1"></div>
-                <div className="starw starw2"></div>
-                <div className="starw starw3"></div>
-            </div>}
-            <img src={img} alt="MICHALONDevReact" className="imgTransition" />
+        </div>
     </section>
 );
 }

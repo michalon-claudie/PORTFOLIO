@@ -16,7 +16,7 @@ import '../Style/Home.scss'
 export default function Home()
 {
     const [loading, setLoading] = useState(true);
-    const loaderDisplayTime = 5000;
+    const loaderDisplayTime = 6000;
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -44,8 +44,8 @@ export default function Home()
             </div>
             ) : (
             <main className="mainContainer">
-                <Welcome/>
                 <Naviguation/>
+                <Welcome/>
                 <About/>
                 <Banner/>
                 <Projects/>
