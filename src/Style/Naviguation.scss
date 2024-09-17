@@ -10,6 +10,7 @@
         list-style-type: none;
         gap: 4%;
         width:100%;
+        color:white;
         @media screen and (max-width: 700px) {
             gap:0%;
         }
@@ -18,24 +19,22 @@
         }
         @media screen and (max-width: 463px) and (min-width: 280px) {
             font-size:7px;
+            color:white;
         }
         a{
             text-decoration: none;
             cursor:pointer;
             font-size:20px;
             padding:10px;
-            color:white;
             position: relative;
             overflow: hidden;
+            color:white;
             @media screen and (max-width: 700px) and (min-width: 463px) {
                 font-size: 12px;
             }
             @media screen and (max-width: 463px) and (min-width: 280px) {
-                font-size:10px;
+                font-size:13px;
             }
-            &:active {
-                background: linear-gradient(to right, #142776,#01071b);
-                }
             &::before,
             &::after {
                 content: "";
@@ -61,6 +60,8 @@
     }
     &.fixed-nav {
         position: fixed;
+        background-color: white;
+        color:black;
         top: 0;
         width: 100%;
         z-index: 1000;

@@ -14,18 +14,18 @@ export default function About(){
                 <br/>
             </p>
             <p className='AboutSectionPNumbertwo'>
-                Une fois diplomée, j'ai mis en pratique mes connaissances. <br/>Une dynamique start-up Troyenne m'a fait confiance et m'a permit de mettre en pratique ce que j'avais appris. 
+                Une fois diplomée, j'ai mis en pratique mes connaissances. <br/>Une dynamique start-up Troyenne m'a fait confiance et m'a permis de mettre en pratique ce que j'avais appris. 
                 De plus, durant l'exercice de mes fonctions,  j'ai pu me former au back-end, aux concepts d'UX/UI design et au gestion de bases de données.
-                <br/>J'aime apprendre seule mais apprendre auprès de professionels passionés fut très enrichissant. 
+                <br/>J'aime apprendre seule mais apprendre auprès de professionels passionnés fut très enrichissant. 
                 <br/>
                 Toutefois, cette expérience fut écourtée en raisons de problèmes économiques au sein de l'entreprise. 
                 C'est pourquoi je suis à la recherche d'une nouvelle opportunité.
                 <br/>
             </p>
             <p className='AboutSectionPNumberthree'>
-                Mon interet ne fait que grandir au fil de mes projets.
-                Chaque jour, je continues de créer des projets et de m'exercer afin de proposer des expériences numériques dynamiques et intéréssantes.<br/>
-                N'hésitez pas à parcourir mon site et à bientot !
+                Mon intérêt ne fait que grandir au fil de mes projets.
+                Chaque jour, je continue de créer des projets et de m'exercer afin de proposer des expériences numériques dynamiques et intéressantes.<br/>
+                N'hésitez pas à parcourir mon site et à bientôt !
             </p>
         </section>
     )
