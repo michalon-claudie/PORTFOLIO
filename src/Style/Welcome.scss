@@ -3,6 +3,9 @@
     height:100vh;
     margin:20px 20px 20px 20px;
     justify-content: center;
+    @media screen and (max-width: 420px) {
+        margin:100px 20px 20px 20px;
+    }
     .helloAndContactContainer{
         background-image: url('../images/diamond.png');
         background-size: cover; 
@@ -16,6 +19,7 @@
         .iconContact{
             display: flex;
             gap:30px;
+            padding:20px;
         @media screen and (min-width: 700px){
             gap:20px;
         }
@@ -25,7 +29,7 @@
                 text-decoration: none;
                 .svg-inline--fa {
                     @media screen and (max-width:700px){
-                    height: 2.7em;
+                    height: 2.5em;
                     }
                 }
             }
