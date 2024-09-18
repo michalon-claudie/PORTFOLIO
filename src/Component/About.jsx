@@ -11,7 +11,6 @@ export default function About(){
                 <br/>
                 Suite à de multiples recherches et beaucoup d'apprentissage en autodidacte, 
                 j'ai décidé de m'orienter dans le développement web, en particulier dans le domaine du Frontend.
-                <br/>
             </p>
             <p className='AboutSectionPNumbertwo'>
                 Une fois diplomée, j'ai mis en pratique mes connaissances. <br/>Une dynamique start-up Troyenne m'a fait confiance et m'a permis de mettre en pratique ce que j'avais appris. 
