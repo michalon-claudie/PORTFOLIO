@@ -10,7 +10,7 @@ export default function About(){
                 <p>
                     Je suis Claudie, ancienne infirmière et développeuse web fraichement diplômée.
                 </p>
-                <img src={MCPicture} alt="Picture MichalonC"/>
+                <img src={MCPicture} alt="MichalonC"/>
             </div>
             <ul>
                 <li>
