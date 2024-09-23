@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Welcome(){
 const [message, setMessage] = useState('');
-const originalMessage = "< Bienvenue, je suis Claudie Michalon, développeuse frontend />";
+const originalMessage = "< Bienvenue, je suis Claudie Michalon, développeuse web />";
 
 useEffect(() => {
     let index = 0;

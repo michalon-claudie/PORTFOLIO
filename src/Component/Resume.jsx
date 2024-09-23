@@ -1,6 +1,6 @@
 import React from 'react'
-import resume from '../images/myresume.webp'
-import pdfResume from '../images/CV_MICHALONC_082024.pdf'
+import resume from '../images/CV_MICHALON_Claudie092024.webp'
+import pdfResume from '../images/CV_MICHALON_C_092024.pdf'
 import '../Style/Resume.scss'
 
 export default function Resume(){
