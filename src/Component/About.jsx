@@ -26,7 +26,7 @@ export default function About(){
                     En cours: Formation en Back-end et UX design en autodidacte
                 </li>
                 <li>
-                    En cours: Projet personnel et recherche d'emploi
+                    En cours: Projet personnel et à la recherche de nouvelles opportunités
                 </li>
             </ul>
         </section>
