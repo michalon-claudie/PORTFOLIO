@@ -8,25 +8,27 @@ export default function About(){
             <h3>Enchanté et Bienvenue sur mon portfolio !</h3>
             <div className='AboutSectionP'>
                 <p>
-                    Je suis Claudie, ancienne infirmière et développeuse web fraichement diplômée.
+                    Je suis Claudie, infirmière et développeuse web fraichement diplômée.
                 </p>
                 <img src={MCPicture} alt="MichalonC"/>
             </div>
             <ul>
                 <li>
-                    Ancienne Infirmière
+                    Infirmière diplômée Croix rouge française - 2018
                 </li>
                 <li>
                     Diplomée d'Openclassroom -Développeur Front-end
                 </li>
                 <li>
-                    1ère expérience - Start-up
+                    Expérience en infirmière, à travers différents secteurs et à travers la France.<br/>
+                    Expérience en developpement web : 1ère expérience - Start-up.
                 </li>
                 <li>
-                    En cours: Formation en Back-end et UX design en autodidacte
+                    En cours: Formation en Back-end et UX design en autodidacte.<br/>
+                    Renseignements sur les technologies utilisés en santé et bien-être.
                 </li>
                 <li>
-                    En cours: Projet personnel et à la recherche de nouvelles opportunités
+                    En cours: à la recherche de nouvelles opportunités
                 </li>
             </ul>
         </section>
