@@ -1,11 +1,15 @@
 import React from 'react'
 import resume from '../images/CV_MICHALON_Claudie092024.webp'
 import pdfResume from '../images/CV_MICHALON_C_092024.pdf'
+import pdfResumeInfirmier from '../images/MICHALONC_IDE_CV0924.pdf'
 import '../Style/Resume.scss'
 
 export default function Resume(){
     const downloadResume = () => {
         window.open(pdfResume);
+    };
+    const downloadResumeInfirmier = () => {
+        window.open(pdfResumeInfirmier);
     };
     return(
     <section id="Resume"className='resume'>
@@ -16,6 +20,7 @@ export default function Resume(){
             <Skill name="Formation en entreprise SVELTEKIT/MySQL/UI-UX" level={100} />
             <Skill name="Autodidacte ExpressJS - React Native" level={20} />
             <button onClick={downloadResume}>Télécharger le CV</button>
+            <button onClick={downloadResumeInfirmier}>Télécharger le CV infirmier </button>
         </div>
         <div className="skills">
             <h2>Mes Compétences</h2>
@@ -35,7 +40,6 @@ export default function Resume(){
             <Skill name="Responsive" level={85} />
             <Skill name="Node JS" level={40} />
             <Skill name="MySQL" level={60} />
-            <Skill name="Prisma" level={20} />
         </div>
     </section>
     );
