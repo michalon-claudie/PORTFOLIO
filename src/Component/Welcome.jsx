@@ -19,7 +19,7 @@ useEffect(() => {
         if (index > originalMessage.length) {
             clearInterval(intervalId);
         }
-    }, 150); 
+    }, 100); 
 
     return () => {
         clearInterval(intervalId);

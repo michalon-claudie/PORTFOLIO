@@ -1,6 +1,6 @@
 import React from 'react'
 import resume from '../images/CV_MICHALON_Claudie092024.webp'
-import pdfResume from '../images/CV_MICHALON_C_092024.pdf'
+import pdfResume from '../images/CV2511MICHALONCIDE.pdf'
 import pdfResumeInfirmier from '../images/MICHALONC_IDE_CV0924.pdf'
 import '../Style/Resume.scss'
 
