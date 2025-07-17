@@ -14,7 +14,7 @@ export default function Carousel({ project }) {
         const interval = setInterval(() => {
             const newIndex = (currentImageIndex + 1) % project.images.length;
             setCurrentImageIndex(newIndex);
-        }, 1000); 
+        }, 3000); 
         return () => clearInterval(interval);
     }, [currentImageIndex, project.images.length]);
 
