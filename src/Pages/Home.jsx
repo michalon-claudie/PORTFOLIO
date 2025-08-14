@@ -38,9 +38,6 @@ export default function Home()
                 <div className="loader-line-horizontal"></div>
                 <div className="loader-line-vertical"></div>
                 <div className="loader-line-C"></div>
-                <div className="star star1"></div>
-                <div className="star star2"></div>
-                <div className="star star3"></div>
             </div>
             ) : (
             <main className="mainContainer">
